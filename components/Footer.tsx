@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
             <h2 className="font-heading font-black text-2xl tracking-tighter mb-4 text-white">
               REVENUE <span className="text-primary-blue">HUNTERS</span>
             </h2>
-            <p className="text-secondary-gray text-sm max-w-xs leading-relaxed opacity-80">
+            <p className="text-secondary-gray text-lg max-w-xs leading-relaxed opacity-80">
               Automated AI systems for businesses that refuse to leave money on the table. Inbound, outbound, and everything in between.
             </p>
           </div>
@@ -18,18 +18,18 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="font-heading font-bold text-lg mb-4 text-primary-blue">SITEMAP</h3>
             <ul className="space-y-2">
-              <li><Link to="/" className="text-sm hover:text-primary-blue transition-colors">Home</Link></li>
-              <li><Link to="/plumbers" className="text-sm hover:text-primary-blue transition-colors">Plumbers</Link></li>
-              <li><Link to="/pricing" className="text-sm hover:text-primary-blue transition-colors">Pricing</Link></li>
-              <li><Link to="/contact" className="text-sm hover:text-primary-blue transition-colors">Contact</Link></li>
+              <li><Link to="/" className="text-base hover:text-primary-blue transition-colors">Home</Link></li>
+              <li><Link to="/plumbers" className="text-base hover:text-primary-blue transition-colors">Plumbers</Link></li>
+              <li><Link to="/pricing" className="text-base hover:text-primary-blue transition-colors">Pricing</Link></li>
+              <li><Link to="/contact" className="text-base hover:text-primary-blue transition-colors">Contact</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-heading font-bold text-lg mb-4 text-primary-blue">CONTACT</h3>
             <ul className="space-y-2">
-              <li className="text-sm opacity-80">alex@revenuehunters.com</li>
-              <li className="text-sm opacity-80">Orlando, FL</li>
+              <li className="text-base opacity-80">sales@revenuehunters.com</li>
+              <li className="text-base opacity-80">Orlando, FL</li>
             </ul>
           </div>
         </div>

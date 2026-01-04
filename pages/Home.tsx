@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Check, X, TrendingUp, ShieldCheck, Phone } from 'lucide-react';
 
 const Home: React.FC = () => {
+  const buttonBaseClass = "w-full sm:w-80 flex items-center justify-center font-heading font-bold text-lg py-5 px-6 rounded-none transition-all";
+
   return (
     <div className="flex flex-col w-full overflow-hidden">
       
@@ -15,18 +17,20 @@ const Home: React.FC = () => {
         <p className="text-lg md:text-2xl text-secondary-gray/80 max-w-3xl mx-auto mb-12 font-medium leading-relaxed">
           Revenue Hunters installs AI inbound and outbound calling agents that answer, qualify, and book appointments—without hiring more staff.
         </p>
-        <div className="flex flex-col items-center gap-6">
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="tel:5612643614" className="bg-accent-red hover:bg-white hover:text-accent-red text-white font-heading font-bold text-lg py-4 px-10 rounded-none transform hover:-translate-y-1 transition-all flex items-center gap-2">
+        
+        {/* HERO BUTTONS */}
+        <div className="flex flex-col items-center gap-4 w-full">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 w-full">
+            <a href="tel:5612643614" className={`${buttonBaseClass} bg-accent-red text-white hover:bg-white hover:text-accent-red transform hover:-translate-y-1 gap-2 shadow-lg`}>
               <Phone className="w-5 h-5" />
-              CALL AI DEMO
+              CALL FOR DEMO
             </a>
-            <Link to="/pricing" className="border border-white/20 hover:border-primary-blue text-white hover:text-primary-blue font-heading font-bold text-lg py-4 px-10 rounded-none transition-all">
+            <Link to="/pricing" className={`${buttonBaseClass} border border-white/20 text-white hover:border-primary-blue hover:text-primary-blue`}>
               SEE PRICING
             </Link>
           </div>
           
-          <Link to="/contact" className="border-2 border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-primary font-heading font-bold text-lg py-4 px-12 rounded-none transition-all mt-2">
+          <Link to="/contact" className={`${buttonBaseClass} bg-primary-blue text-black hover:bg-white hover:text-black`}>
             GET MORE REVENUE
           </Link>
         </div>
@@ -72,7 +76,7 @@ const Home: React.FC = () => {
             <div key={idx} className="bg-white/5 p-8 border border-white/10 hover:border-primary-blue/50 transition-colors">
               <X className="text-accent-red mb-4 h-8 w-8" />
               <h3 className="font-heading font-bold text-xl text-white mb-2">{item.title}</h3>
-              <p className="text-sm text-secondary-gray">{item.desc}</p>
+              <p className="text-lg text-secondary-gray">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -182,7 +186,7 @@ const Home: React.FC = () => {
                 {item.step}
               </div>
               <h3 className="font-heading font-bold text-2xl text-white mb-4 relative z-10">{item.title}</h3>
-              <p className="text-secondary-gray relative z-10">{item.desc}</p>
+              <p className="text-lg text-secondary-gray relative z-10">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -226,18 +230,20 @@ const Home: React.FC = () => {
           <h2 className="font-heading font-black text-5xl md:text-6xl mb-8 leading-tight">
             STOP LOSING MONEY.<br />START HUNTING REVENUE.
           </h2>
-          <div className="flex flex-col items-center gap-8 mt-12">
-            <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <a href="tel:5612643614" className="bg-accent-red hover:bg-white hover:text-accent-red text-white font-heading font-bold text-xl py-5 px-12 rounded-none shadow-2xl hover:shadow-xl transition-all flex items-center gap-3">
+          
+          {/* CTA BUTTONS - SAME AS HERO */}
+          <div className="flex flex-col items-center gap-4 w-full mt-12">
+            <div className="flex flex-col sm:flex-row justify-center gap-4 w-full">
+              <a href="tel:5612643614" className={`${buttonBaseClass} bg-accent-red text-white hover:bg-white hover:text-accent-red transform hover:-translate-y-1 gap-2 shadow-xl`}>
                 <Phone className="w-5 h-5" />
-                CALL AI DEMO
+                CALL FOR DEMO
               </a>
-              <Link to="/pricing" className="border-2 border-primary text-primary hover:bg-primary hover:text-white font-heading font-bold text-xl py-5 px-12 rounded-none transition-all">
+              <Link to="/pricing" className={`${buttonBaseClass} border-2 border-primary text-primary hover:bg-primary hover:text-white`}>
                 SEE PRICING
               </Link>
             </div>
 
-            <Link to="/contact" className="border-2 border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white font-heading font-bold text-xl py-5 px-12 rounded-none transition-all">
+            <Link to="/contact" className={`${buttonBaseClass} bg-primary-blue text-black hover:bg-white hover:text-black`}>
               GET MORE REVENUE
             </Link>
           </div>

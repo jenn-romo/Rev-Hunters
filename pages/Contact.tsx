@@ -30,13 +30,13 @@ const Contact: React.FC = () => {
                 </div>
               </a>
 
-              <a href="mailto:alex@revenuehunters.com" className="flex items-center group">
+              <a href="mailto:sales@revenuehunters.com" className="flex items-center group">
                 <div className="h-12 w-12 bg-primary-blue/10 flex items-center justify-center mr-4 group-hover:bg-primary-blue/20 transition-colors">
                   <Mail className="h-6 w-6 text-primary-blue" />
                 </div>
                 <div>
                   <span className="block text-xs font-bold text-secondary-gray uppercase tracking-widest mb-1">Email Us</span>
-                  <span className="text-xl font-heading font-bold text-white group-hover:text-primary-blue transition-colors">alex@revenuehunters.com</span>
+                  <span className="text-xl font-heading font-bold text-white group-hover:text-primary-blue transition-colors">sales@revenuehunters.com</span>
                 </div>
               </a>
             </div>

@@ -11,7 +11,7 @@ const Pricing: React.FC = () => {
           SIMPLE, ROI-FOCUSED <span className="text-primary-blue">PRICING</span>
         </h1>
         <p className="text-xl text-secondary-gray">
-          Invest in systems, not headcount. Scale your revenue without scaling your payroll.
+          Invest in AI, not headcount. Scale your revenue without scaling your payroll.
         </p>
       </div>
 
@@ -20,38 +20,38 @@ const Pricing: React.FC = () => {
         {/* INBOUND RECEPTIONIST */}
         <div className="border border-white/10 bg-black/40 p-8 flex flex-col hover:border-primary-blue/30 transition-colors">
           <h3 className="font-heading font-bold text-2xl text-white mb-2">INBOUND RECEPTIONIST</h3>
-          <p className="text-secondary-gray text-sm mb-6">Never miss a call again.</p>
+          <p className="text-secondary-gray text-base mb-6">Never miss a call again.</p>
           <div className="mb-8">
             <span className="text-4xl font-heading font-bold text-white">$997</span>
-            <span className="text-secondary-gray"> / month</span>
+            <span className="text-secondary-gray text-lg"> / month</span>
           </div>
           <ul className="space-y-4 mb-8 flex-grow">
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               1 AI Agent
             </li>
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               24/7 AI Answering
             </li>
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               500 calls
             </li>
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               1,000 minutes
             </li>
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               $0.10 per additional minute
             </li>
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               Appointment Scheduling
             </li>
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               Real-time Insights
             </li>
           </ul>
@@ -60,60 +60,57 @@ const Pricing: React.FC = () => {
           </Link>
         </div>
 
-        {/* INBOUND SALES REP - FEATURED */}
-        <div className="relative border-2 border-primary-blue bg-primary-blue/5 p-8 flex flex-col transform md:-translate-y-4 shadow-2xl shadow-primary-blue/20">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary-blue text-primary font-bold px-4 py-1 text-sm tracking-widest uppercase">
-            Best Value
-          </div>
+        {/* INBOUND SALES REP - (Formerly Featured) */}
+        <div className="border border-white/10 bg-black/40 p-8 flex flex-col hover:border-primary-blue/30 transition-colors">
           <h3 className="font-heading font-bold text-2xl text-white mb-2">INBOUND SALES REP</h3>
-          <p className="text-secondary-gray text-sm mb-6">Complete sales automation.</p>
+          <p className="text-secondary-gray text-base mb-6">Complete sales automation.</p>
           <div className="mb-8">
             <span className="text-4xl font-heading font-bold text-white">$1,897</span>
-            <span className="text-secondary-gray"> / month</span>
+            <span className="text-secondary-gray text-lg"> / month</span>
           </div>
           <ul className="space-y-4 mb-8 flex-grow">
-            <li className="flex items-start text-sm text-white font-bold">
-              <Zap className="h-5 w-5 text-yellow-400 mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               1 AI Agent
             </li>
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               24/7 AI Answering
             </li>
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               1,000 calls
             </li>
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               2,000 minutes
             </li>
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               $0.10 per additional minute
             </li>
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               Schedules Qualified Leads
             </li>
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               Sales Closing
             </li>
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               Product Knowledge
             </li>
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               Answering FAQs
             </li>
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               Real-time Insights
             </li>
           </ul>
-          <Link to="/contact" className="w-full block text-center bg-primary-blue text-primary hover:bg-white font-heading font-bold py-4 transition-all shadow-lg">
+          <Link to="/contact" className="w-full block text-center border border-white text-white hover:bg-white hover:text-primary font-heading font-bold py-4 transition-all">
             HIRE YOUR REP
           </Link>
         </div>
@@ -121,46 +118,50 @@ const Pricing: React.FC = () => {
         {/* OUTBOUND SALES HUNTER */}
         <div className="border border-white/10 bg-black/40 p-8 flex flex-col hover:border-primary-blue/30 transition-colors">
           <h3 className="font-heading font-bold text-2xl text-white mb-2">OUTBOUND SALES HUNTER</h3>
-          <p className="text-secondary-gray text-sm mb-6">Aggressive lead chaser.</p>
+          <p className="text-secondary-gray text-base mb-6">Aggressive lead chaser.</p>
           <div className="mb-8">
             <span className="text-4xl font-heading font-bold text-white">$3,997</span>
-            <span className="text-secondary-gray"> / month</span>
+            <span className="text-secondary-gray text-lg"> / month</span>
           </div>
           <ul className="space-y-4 mb-8 flex-grow">
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              1 AI Agent
+            </li>
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               2,000 calls (100 calls per day)
             </li>
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               4,000 minutes
             </li>
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               $0.20 per additional minute
             </li>
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               Custom Onboard Script Training
             </li>
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               CRM Integration
             </li>
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               Calendar Integration
             </li>
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               Instant Market Insight
             </li>
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               Booked Sales Meetings
             </li>
-            <li className="flex items-start text-sm text-secondary-gray">
-              <Check className="h-5 w-5 text-primary-blue mr-3 flex-shrink-0" />
+            <li className="flex items-start text-base text-secondary-gray">
+              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
               Real-time Insights
             </li>
           </ul>
