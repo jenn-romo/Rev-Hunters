@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Check, Zap } from 'lucide-react';
+import { Check } from 'lucide-react';
 
 const Pricing: React.FC = () => {
   return (
