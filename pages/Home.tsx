@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Check, X, Phone, TrendingUp, ShieldCheck, Zap } from 'lucide-react';
+import { Check, X, TrendingUp, ShieldCheck } from 'lucide-react';
 
 const Home: React.FC = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Check, PhoneOff, AlertTriangle, Shield, PhoneCall } from 'lucide-react';
+import { PhoneOff, AlertTriangle, Shield, PhoneCall } from 'lucide-react';
 
 const Plumbers: React.FC = () => {
   return (
