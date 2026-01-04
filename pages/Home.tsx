@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Check, X, TrendingUp, ShieldCheck } from 'lucide-react';
+import { Check, X, TrendingUp, ShieldCheck, Phone } from 'lucide-react';
 
 const Home: React.FC = () => {
   return (
@@ -10,17 +10,24 @@ const Home: React.FC = () => {
       <section className="relative py-24 md:py-32 px-4 max-w-7xl mx-auto w-full text-center">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-primary-blue/10 rounded-full blur-[100px] -z-10"></div>
         <h1 className="font-heading font-black text-5xl md:text-7xl lg:text-8xl leading-tight tracking-tighter text-white mb-8">
-          NEVER MISS A <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-white">REVENUE CALL</span> AGAIN.
+          WE HUNT SO <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-white">YOU CAN EAT</span>.
         </h1>
         <p className="text-lg md:text-2xl text-secondary-gray/80 max-w-3xl mx-auto mb-12 font-medium leading-relaxed">
-          Revenue Hunters installs AI inbound and outbound calling systems that answer, qualify, and book appointments—without hiring more staff.
+          Revenue Hunters installs AI inbound and outbound calling agents that answer, qualify, and book appointments—without hiring more staff.
         </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <Link to="/contact" className="bg-primary-blue hover:bg-secondary-blue text-primary font-heading font-bold text-lg py-4 px-10 rounded-none transform hover:-translate-y-1 transition-all">
-            BOOK A DEMO
-          </Link>
-          <Link to="/pricing" className="border border-white/20 hover:border-primary-blue text-white hover:text-primary-blue font-heading font-bold text-lg py-4 px-10 rounded-none transition-all">
-            SEE PRICING
+        <div className="flex flex-col items-center gap-6">
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="tel:5612643614" className="bg-accent-red hover:bg-white hover:text-accent-red text-white font-heading font-bold text-lg py-4 px-10 rounded-none transform hover:-translate-y-1 transition-all flex items-center gap-2">
+              <Phone className="w-5 h-5" />
+              CALL AI DEMO
+            </a>
+            <Link to="/pricing" className="border border-white/20 hover:border-primary-blue text-white hover:text-primary-blue font-heading font-bold text-lg py-4 px-10 rounded-none transition-all">
+              SEE PRICING
+            </Link>
+          </div>
+          
+          <Link to="/contact" className="border-2 border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-primary font-heading font-bold text-lg py-4 px-12 rounded-none transition-all mt-2">
+            GET MORE REVENUE
           </Link>
         </div>
       </section>
@@ -184,18 +191,11 @@ const Home: React.FC = () => {
       {/* SOCIAL PROOF */}
       <section className="py-20 bg-primary-blue">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <div className="mb-12">
+          <div>
             <h3 className="font-heading font-bold text-3xl text-primary mb-8">
               "We used to miss 20% of our calls on weekends. Now every single one is answered and booked."
             </h3>
             <p className="font-bold text-primary/80">— Plumbing Owner, Florida</p>
-          </div>
-          <div className="h-px bg-black/10 w-full my-8"></div>
-          <div>
-            <h3 className="font-heading font-bold text-3xl text-primary mb-8">
-              "The outbound AI reactivated 400 dead leads in two days. It paid for itself in week one."
-            </h3>
-            <p className="font-bold text-primary/80">— Home Services Operator, Texas</p>
           </div>
         </div>
       </section>
@@ -226,12 +226,19 @@ const Home: React.FC = () => {
           <h2 className="font-heading font-black text-5xl md:text-6xl mb-8 leading-tight">
             STOP LOSING MONEY.<br />START HUNTING REVENUE.
           </h2>
-          <div className="flex flex-col sm:flex-row justify-center gap-6 mt-12">
-            <Link to="/contact" className="bg-primary hover:bg-black text-white font-heading font-bold text-xl py-5 px-12 rounded-none shadow-2xl hover:shadow-xl transition-all">
-              BOOK A DEMO
-            </Link>
-            <Link to="/pricing" className="border-2 border-primary text-primary hover:bg-primary hover:text-white font-heading font-bold text-xl py-5 px-12 rounded-none transition-all">
-              SEE PRICING
+          <div className="flex flex-col items-center gap-8 mt-12">
+            <div className="flex flex-col sm:flex-row justify-center gap-6">
+              <a href="tel:5612643614" className="bg-accent-red hover:bg-white hover:text-accent-red text-white font-heading font-bold text-xl py-5 px-12 rounded-none shadow-2xl hover:shadow-xl transition-all flex items-center gap-3">
+                <Phone className="w-5 h-5" />
+                CALL AI DEMO
+              </a>
+              <Link to="/pricing" className="border-2 border-primary text-primary hover:bg-primary hover:text-white font-heading font-bold text-xl py-5 px-12 rounded-none transition-all">
+                SEE PRICING
+              </Link>
+            </div>
+
+            <Link to="/contact" className="border-2 border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white font-heading font-bold text-xl py-5 px-12 rounded-none transition-all">
+              GET MORE REVENUE
             </Link>
           </div>
         </div>

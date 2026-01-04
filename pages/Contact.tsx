@@ -1,24 +1,7 @@
-import React, { useState } from 'react';
-import { Calendar } from 'lucide-react';
+import React from 'react';
+import { Calendar, Phone, Mail } from 'lucide-react';
 
 const Contact: React.FC = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    phone: '',
-    message: ''
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert("Thank you! This is a demo site, so no data was sent.");
-  };
-
   return (
     <div className="flex flex-col w-full py-20 px-4">
       <div className="max-w-4xl mx-auto w-full">
@@ -29,73 +12,34 @@ const Contact: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           
-          {/* FORM */}
-          <div className="bg-white/5 p-8 border border-white/10">
-            <h2 className="font-heading font-bold text-2xl text-white mb-6">SEND A MESSAGE</h2>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label className="block text-sm font-bold text-secondary-gray mb-2 uppercase tracking-wide">Name</label>
-                <input 
-                  type="text" 
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full bg-black border border-white/20 p-4 text-white focus:border-primary-blue focus:outline-none transition-colors"
-                  placeholder="Your Name"
-                  required 
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-bold text-secondary-gray mb-2 uppercase tracking-wide">Email</label>
-                <input 
-                  type="email" 
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full bg-black border border-white/20 p-4 text-white focus:border-primary-blue focus:outline-none transition-colors"
-                  placeholder="john@company.com"
-                  required 
-                />
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                    <label className="block text-sm font-bold text-secondary-gray mb-2 uppercase tracking-wide">Company</label>
-                    <input 
-                    type="text" 
-                    name="company"
-                    value={formData.company}
-                    onChange={handleChange}
-                    className="w-full bg-black border border-white/20 p-4 text-white focus:border-primary-blue focus:outline-none transition-colors"
-                    placeholder="Company Ltd" 
-                    />
+          {/* CONTACT INFO */}
+          <div className="bg-white/5 p-8 border border-white/10 flex flex-col justify-center">
+            <h2 className="font-heading font-bold text-2xl text-white mb-6">GET IN TOUCH</h2>
+            <p className="text-secondary-gray mb-8">
+              Prefer to reach out directly? Give us a call or send an email.
+            </p>
+            
+            <div className="space-y-6">
+              <a href="tel:5612643614" className="flex items-center group">
+                <div className="h-12 w-12 bg-primary-blue/10 flex items-center justify-center mr-4 group-hover:bg-primary-blue/20 transition-colors">
+                  <Phone className="h-6 w-6 text-primary-blue" />
                 </div>
                 <div>
-                    <label className="block text-sm font-bold text-secondary-gray mb-2 uppercase tracking-wide">Phone</label>
-                    <input 
-                    type="tel" 
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full bg-black border border-white/20 p-4 text-white focus:border-primary-blue focus:outline-none transition-colors"
-                    placeholder="(555) 123-4567" 
-                    />
+                  <span className="block text-xs font-bold text-secondary-gray uppercase tracking-widest mb-1">Call Us</span>
+                  <span className="text-xl font-heading font-bold text-white group-hover:text-primary-blue transition-colors">561-264-3614</span>
                 </div>
-              </div>
-              <div>
-                <label className="block text-sm font-bold text-secondary-gray mb-2 uppercase tracking-wide">Message</label>
-                <textarea 
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows={4}
-                  className="w-full bg-black border border-white/20 p-4 text-white focus:border-primary-blue focus:outline-none transition-colors"
-                  placeholder="Tell us about your current setup..."
-                ></textarea>
-              </div>
-              <button type="submit" className="w-full bg-primary-blue hover:bg-white hover:text-primary text-primary font-heading font-black py-4 uppercase tracking-widest transition-all">
-                Submit Request
-              </button>
-            </form>
+              </a>
+
+              <a href="mailto:alex@revenuehunters.com" className="flex items-center group">
+                <div className="h-12 w-12 bg-primary-blue/10 flex items-center justify-center mr-4 group-hover:bg-primary-blue/20 transition-colors">
+                  <Mail className="h-6 w-6 text-primary-blue" />
+                </div>
+                <div>
+                  <span className="block text-xs font-bold text-secondary-gray uppercase tracking-widest mb-1">Email Us</span>
+                  <span className="text-xl font-heading font-bold text-white group-hover:text-primary-blue transition-colors">alex@revenuehunters.com</span>
+                </div>
+              </a>
+            </div>
           </div>
 
           {/* CALENDLY PLACEHOLDER */}

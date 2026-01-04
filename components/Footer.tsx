@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
-            <h2 className="font-heading font-black text-2xl tracking-tighter mb-4">
+            <h2 className="font-heading font-black text-2xl tracking-tighter mb-4 text-white">
               REVENUE <span className="text-primary-blue">HUNTERS</span>
             </h2>
             <p className="text-secondary-gray text-sm max-w-xs leading-relaxed opacity-80">
@@ -28,8 +28,8 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="font-heading font-bold text-lg mb-4 text-primary-blue">CONTACT</h3>
             <ul className="space-y-2">
-              <li className="text-sm opacity-80">hello@revenuehunters.io</li>
-              <li className="text-sm opacity-80">Miami, FL</li>
+              <li className="text-sm opacity-80">alex@revenuehunters.com</li>
+              <li className="text-sm opacity-80">Orlando, FL</li>
             </ul>
           </div>
         </div>

@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link to="/" className="font-heading font-black text-2xl text-white tracking-tighter">
+            <Link to="/" className="font-heading font-black text-2xl tracking-tighter text-white">
               REVENUE <span className="text-primary-blue">HUNTERS</span>
             </Link>
           </div>
@@ -48,9 +48,9 @@ const Navbar: React.FC = () => {
           <div className="hidden md:block">
             <Link
               to="/contact"
-              className="bg-primary-blue hover:bg-secondary-blue text-primary font-heading font-bold py-3 px-6 rounded-none skew-x-[-10deg] inline-block transition-all hover:scale-105"
+              className="bg-accent-red hover:bg-white hover:text-accent-red text-white font-heading font-bold py-3 px-6 rounded-none skew-x-[-10deg] inline-block transition-all hover:scale-105"
             >
-              <span className="inline-block skew-x-[10deg]">BOOK A DEMO</span>
+              <span className="inline-block skew-x-[10deg]">GET MORE REVENUE</span>
             </Link>
           </div>
 
@@ -85,9 +85,9 @@ const Navbar: React.FC = () => {
             <Link
               to="/contact"
               onClick={() => setIsOpen(false)}
-              className="block w-full text-center bg-primary-blue text-primary font-heading font-bold py-4 mt-4"
+              className="block w-full text-center bg-accent-red hover:bg-white hover:text-accent-red text-white font-heading font-bold py-4 mt-4 transition-colors"
             >
-              BOOK A DEMO
+              GET MORE REVENUE
             </Link>
           </div>
         </div>

@@ -19,8 +19,8 @@ const Plumbers: React.FC = () => {
         <p className="text-xl text-secondary-gray max-w-3xl mx-auto mb-12">
           Stop letting $500 jobs slip through your fingers because you were under a sink.
         </p>
-        <Link to="/contact" className="bg-white text-primary hover:bg-secondary-gray font-heading font-bold text-lg py-4 px-10 rounded-none transition-all inline-block">
-          BOOK A DEMO
+        <Link to="/contact" className="bg-accent-red text-white hover:bg-white hover:text-accent-red font-heading font-bold text-lg py-4 px-10 rounded-none transition-all inline-block">
+          GET MORE REVENUE
         </Link>
       </section>
 
@@ -110,8 +110,8 @@ const Plumbers: React.FC = () => {
       <section className="py-24 text-center">
         <h2 className="font-heading font-bold text-3xl text-white mb-12">STOP FLUSHING LEADS</h2>
         <div className="flex flex-col md:flex-row justify-center gap-6">
-          <Link to="/contact" className="bg-primary-blue hover:bg-secondary-blue text-primary font-heading font-bold text-lg py-4 px-10 rounded-none transition-all">
-            BOOK A DEMO
+          <Link to="/contact" className="bg-accent-red hover:bg-white hover:text-accent-red text-white font-heading font-bold text-lg py-4 px-10 rounded-none transition-all">
+            GET MORE REVENUE
           </Link>
           <Link to="/contact" className="border border-white hover:border-primary-blue hover:text-primary-blue text-white font-heading font-bold text-lg py-4 px-10 rounded-none transition-all">
             GET A FREE MISSED CALL AUDIT
