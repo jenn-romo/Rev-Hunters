@@ -19,7 +19,6 @@ const Footer: React.FC = () => {
             <h3 className="font-heading font-bold text-sm tracking-widest mb-6 text-primary-blue uppercase">Solutions</h3>
             <ul className="space-y-3">
               <li><Link to="/" className="text-base hover:text-primary-blue transition-colors opacity-70 hover:opacity-100">Home</Link></li>
-              <li><Link to="/pricing" className="text-base hover:text-primary-blue transition-colors opacity-70 hover:opacity-100">Pricing</Link></li>
               <li><Link to="/contact" className="text-base hover:text-primary-blue transition-colors opacity-70 hover:opacity-100">Book Demo</Link></li>
             </ul>
             

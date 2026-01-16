@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Check, X, TrendingUp, ShieldCheck, Phone } from 'lucide-react';
+import { Check, X, ShieldCheck, Phone } from 'lucide-react';
 
 const Home: React.FC = () => {
   const buttonBaseClass = "w-full sm:w-80 flex items-center justify-center font-heading font-bold text-lg py-5 px-6 rounded-none transition-all";
@@ -25,14 +25,10 @@ const Home: React.FC = () => {
               <Phone className="w-5 h-5" />
               CALL FOR DEMO
             </a>
-            <Link to="/pricing" className={`${buttonBaseClass} border border-white/20 text-white hover:border-primary-blue hover:text-primary-blue`}>
-              SEE PRICING
+            <Link to="/contact" className={`${buttonBaseClass} bg-primary-blue text-black hover:bg-white hover:text-black`}>
+              GET MORE REVENUE
             </Link>
           </div>
-          
-          <Link to="/contact" className={`${buttonBaseClass} bg-primary-blue text-black hover:bg-white hover:text-black`}>
-            GET MORE REVENUE
-          </Link>
         </div>
       </section>
 
@@ -213,17 +209,6 @@ const Home: React.FC = () => {
         </p>
       </section>
 
-      {/* PRICING PREVIEW */}
-      <section className="py-20 text-center">
-        <h2 className="font-heading font-bold text-3xl text-white mb-8">READY TO DEPLOY?</h2>
-        <p className="text-secondary-gray mb-12 max-w-2xl mx-auto">
-          Transparent pricing. No hidden fees. Systems that scale with you.
-        </p>
-        <Link to="/pricing" className="inline-flex items-center font-heading font-bold text-primary-blue hover:text-white transition-colors text-xl group">
-          VIEW FULL PRICING <TrendingUp className="ml-2 group-hover:translate-x-1 transition-transform" />
-        </Link>
-      </section>
-
       {/* CTA */}
       <section className="py-32 bg-secondary-gray text-primary text-center">
         <div className="max-w-4xl mx-auto px-4">
@@ -231,21 +216,16 @@ const Home: React.FC = () => {
             STOP LOSING MONEY.<br />START HUNTING REVENUE.
           </h2>
           
-          {/* CTA BUTTONS - SAME AS HERO */}
           <div className="flex flex-col items-center gap-4 w-full mt-12">
             <div className="flex flex-col sm:flex-row justify-center gap-4 w-full">
               <a href="tel:5612643614" className={`${buttonBaseClass} bg-accent-red text-white hover:bg-white hover:text-accent-red transform hover:-translate-y-1 gap-2 shadow-xl`}>
                 <Phone className="w-5 h-5" />
                 CALL FOR DEMO
               </a>
-              <Link to="/pricing" className={`${buttonBaseClass} border-2 border-primary text-primary hover:bg-primary hover:text-white`}>
-                SEE PRICING
+              <Link to="/contact" className={`${buttonBaseClass} bg-primary-blue text-black hover:bg-white hover:text-black`}>
+                GET MORE REVENUE
               </Link>
             </div>
-
-            <Link to="/contact" className={`${buttonBaseClass} bg-primary-blue text-black hover:bg-white hover:text-black`}>
-              GET MORE REVENUE
-            </Link>
           </div>
         </div>
       </section>

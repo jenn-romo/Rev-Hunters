@@ -23,7 +23,7 @@ const PropertyManagement: React.FC = () => {
           to="/contact" 
           className="bg-accent-red text-white hover:bg-white hover:text-accent-red font-heading font-bold text-lg py-5 px-12 rounded-none transition-all inline-block skew-x-[-5deg]"
         >
-          <span className="inline-block skew-x-[5deg]">YES, SHOW ME HOW TO STOP MISSED CALLS</span>
+          <span className="inline-block skew-x-[5deg]">HELP ME FIX THIS NOW</span>
         </Link>
       </section>
 
@@ -60,7 +60,7 @@ const PropertyManagement: React.FC = () => {
             to="/contact" 
             className="bg-primary-blue text-black hover:bg-white hover:text-black font-heading font-bold text-lg py-5 px-12 rounded-none transition-all inline-block shadow-2xl"
           >
-            YES, SHOW ME HOW TO STOP MISSED CALLS
+            HELP ME FIX THIS NOW
           </Link>
         </div>
       </section>
@@ -204,7 +204,7 @@ const PropertyManagement: React.FC = () => {
             to="/contact" 
             className="bg-accent-red text-white hover:bg-white hover:text-accent-red font-heading font-bold text-2xl py-6 px-16 rounded-none transition-all inline-block shadow-2xl skew-x-[-10deg]"
           >
-            <span className="inline-block skew-x-[10deg]">YES, SHOW ME HOW TO STOP MISSED CALLS</span>
+            <span className="inline-block skew-x-[10deg]">HELP ME FIX THIS NOW</span>
           </Link>
         </div>
       </section>
