@@ -11,7 +11,7 @@ const Pricing: React.FC = () => {
           SIMPLE, ROI-FOCUSED <span className="text-primary-blue">PRICING</span>
         </h1>
         <p className="text-xl text-secondary-gray">
-          Invest in AI, not headcount. Scale your revenue without scaling your payroll.
+          Invest in automation, not headcount. Scale your revenue without scaling your payroll.
         </p>
       </div>
 
@@ -28,11 +28,11 @@ const Pricing: React.FC = () => {
           <ul className="space-y-4 mb-8 flex-grow">
             <li className="flex items-start text-base text-secondary-gray">
               <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
-              1 AI Agent
+              1 System Agent
             </li>
             <li className="flex items-start text-base text-secondary-gray">
               <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
-              24/7 AI Answering
+              24/7 Automated Answering
             </li>
             <li className="flex items-start text-base text-secondary-gray">
               <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
@@ -71,11 +71,11 @@ const Pricing: React.FC = () => {
           <ul className="space-y-4 mb-8 flex-grow">
             <li className="flex items-start text-base text-secondary-gray">
               <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
-              1 AI Agent
+              1 System Agent
             </li>
             <li className="flex items-start text-base text-secondary-gray">
               <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
-              24/7 AI Answering
+              24/7 Automated Answering
             </li>
             <li className="flex items-start text-base text-secondary-gray">
               <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
@@ -126,7 +126,7 @@ const Pricing: React.FC = () => {
           <ul className="space-y-4 mb-8 flex-grow">
             <li className="flex items-start text-base text-secondary-gray">
               <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
-              1 AI Agent
+              1 System Agent
             </li>
             <li className="flex items-start text-base text-secondary-gray">
               <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
@@ -142,7 +142,7 @@ const Pricing: React.FC = () => {
             </li>
             <li className="flex items-start text-base text-secondary-gray">
               <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
-              Custom Onboard Script Training
+              Custom Onboard Protocol Training
             </li>
             <li className="flex items-start text-base text-secondary-gray">
               <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />

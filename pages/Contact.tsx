@@ -47,7 +47,7 @@ const Contact: React.FC = () => {
             <Calendar className="h-16 w-16 text-primary-blue mb-6" />
             <h3 className="font-heading font-bold text-2xl text-white mb-4">SKIP THE BACK & FORTH</h3>
             <p className="text-secondary-gray mb-8 max-w-xs">
-              Ready to talk now? Select a time directly on our calendar to speak with an automation expert.
+              Ready to talk now? Select a time directly on our calendar to speak with a systems expert.
             </p>
             <button 
               onClick={() => alert('Calendly would open here')}

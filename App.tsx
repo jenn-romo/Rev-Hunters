@@ -3,6 +3,7 @@ import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Plumbers from './pages/Plumbers';
+import PropertyManagement from './pages/PropertyManagement';
 import Pricing from './pages/Pricing';
 import Contact from './pages/Contact';
 
@@ -23,6 +24,7 @@ const App: React.FC = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="plumbers" element={<Plumbers />} />
+          <Route path="propertymanagement" element={<PropertyManagement />} />
           <Route path="pricing" element={<Pricing />} />
           <Route path="contact" element={<Contact />} />
         </Route>

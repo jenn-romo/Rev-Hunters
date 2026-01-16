@@ -15,7 +15,7 @@ const Home: React.FC = () => {
           WE HUNT SO <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-white">YOU CAN EAT</span>.
         </h1>
         <p className="text-lg md:text-2xl text-secondary-gray/80 max-w-3xl mx-auto mb-12 font-medium leading-relaxed">
-          Revenue Hunters installs AI inbound and outbound calling agents that answer, qualify, and book appointments—without hiring more staff.
+          Revenue Hunters installs automated inbound and outbound calling systems that answer, qualify, and book appointments—without hiring more staff.
         </p>
         
         {/* HERO BUTTONS */}
@@ -92,7 +92,7 @@ const Home: React.FC = () => {
                 THE REVENUE HUNTER SYSTEM
               </h2>
               <p className="text-lg text-secondary-gray mb-8 leading-relaxed">
-                We install a complete AI infrastructure that operates with military precision. It doesn't sleep, doesn't take breaks, and follows the script perfectly every time.
+                We install a complete proprietary infrastructure that operates with military precision. It doesn't sleep, doesn't take breaks, and follows the protocol perfectly every time.
               </p>
               <ul className="space-y-4">
                 {[
@@ -124,7 +124,7 @@ const Home: React.FC = () => {
                   </div>
                   <div className="flex gap-4 text-primary-blue">
                     <span>[10:42:02]</span>
-                    <span>AI Agent Assigned. Answering.</span>
+                    <span>System Agent Assigned. Answering.</span>
                   </div>
                   <div className="flex gap-4 text-white">
                     <span>[10:42:45]</span>
@@ -175,7 +175,7 @@ const Home: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
             { step: "01", title: "Audit", desc: "We analyze your current call flow and missed opportunities." },
-            { step: "02", title: "Build Logic", desc: "We script the AI to handle objections and qualify leads." },
+            { step: "02", title: "Build Logic", desc: "We configure the system to handle objections and qualify leads." },
             { step: "03", title: "Connect", desc: "We integrate with your existing phone lines and CRM." },
             { step: "04", title: "Test", desc: "Rigorous stress testing to ensure seamless conversation." },
             { step: "05", title: "Go Live", desc: "The system takes over. You stop missing calls instantly." },

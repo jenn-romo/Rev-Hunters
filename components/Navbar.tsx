@@ -10,12 +10,12 @@ const Navbar: React.FC = () => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Plumbers', path: '/plumbers' },
     { name: 'Pricing', path: '/pricing' },
+    { name: 'Contact', path: '/contact' },
   ];
 
   const linkClass = (path: string) =>
-    `font-heading text-sm font-bold tracking-wider hover:text-primary-blue transition-colors ${
+    `font-heading text-xs lg:text-sm font-bold tracking-wider hover:text-primary-blue transition-colors ${
       isActive(path) ? 'text-primary-blue' : 'text-white'
     }`;
 
@@ -25,27 +25,24 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link to="/" className="font-heading font-black text-2xl tracking-tighter text-white">
+            <Link to="/" className="font-heading font-black text-xl lg:text-2xl tracking-tighter text-white">
               REVENUE <span className="text-primary-blue">HUNTERS</span>
             </Link>
           </div>
 
           {/* Desktop Nav */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="ml-4 lg:ml-10 flex items-baseline space-x-6 lg:space-x-10">
               {navLinks.map((link) => (
                 <Link key={link.name} to={link.path} className={linkClass(link.path)}>
                   {link.name.toUpperCase()}
                 </Link>
               ))}
-              <Link to="/contact" className={linkClass('/contact')}>
-                CONTACT
-              </Link>
             </div>
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <Link
               to="/contact"
               className="bg-accent-red hover:bg-white hover:text-accent-red text-white font-heading font-bold py-3 px-6 rounded-none skew-x-[-10deg] inline-block transition-all hover:scale-105"

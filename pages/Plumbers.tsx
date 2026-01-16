@@ -77,19 +77,19 @@ const Plumbers: React.FC = () => {
           <div className="p-8 border border-primary-blue/30 bg-primary-blue/5">
             <h3 className="font-heading font-bold text-xl text-white mb-4">1. Instant Pickup</h3>
             <p className="text-secondary-gray">
-              AI answers instantly. "Thanks for calling [Your Company], are you calling about a plumbing emergency or a scheduled visit?"
+              Our system answers instantly. "Thanks for calling [Your Company], are you calling about a plumbing emergency or a scheduled visit?"
             </p>
           </div>
           <div className="p-8 border border-primary-blue/30 bg-primary-blue/5">
             <h3 className="font-heading font-bold text-xl text-white mb-4">2. Text Back</h3>
             <p className="text-secondary-gray">
-              If the line is busy, the AI instantly texts them: "Saw we missed you. Do you have a leak?" Engaging the lead immediately.
+              If the line is busy, the system instantly texts them: "Saw we missed you. Do you have a leak?" Engaging the lead immediately.
             </p>
           </div>
           <div className="p-8 border border-primary-blue/30 bg-primary-blue/5">
             <h3 className="font-heading font-bold text-xl text-white mb-4">3. Booking</h3>
             <p className="text-secondary-gray">
-              The AI gathers address and issue details, then books a slot on your calendar or alerts your dispatch team.
+              The automated system gathers address and issue details, then books a slot on your calendar or alerts your dispatch team.
             </p>
           </div>
         </div>
