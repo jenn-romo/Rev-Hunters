@@ -26,6 +26,9 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li><Link to="/plumbers" className="text-base hover:text-primary-blue transition-colors opacity-70 hover:opacity-100">Plumbing Businesses</Link></li>
               <li><Link to="/propertymanagement" className="text-base hover:text-primary-blue transition-colors opacity-70 hover:opacity-100">Property Management</Link></li>
+              <li><Link to="/linkedin" className="text-base hover:text-primary-blue transition-colors opacity-70 hover:opacity-100">LinkedIn Growth</Link></li>
+              <li><Link to="/solopreneur" className="text-base hover:text-primary-blue transition-colors opacity-70 hover:opacity-100">Small Business</Link></li>
+              <li><Link to="/enterprise" className="text-base hover:text-primary-blue transition-colors opacity-70 hover:opacity-100">Enterprise Solutions</Link></li>
             </ul>
           </div>
 

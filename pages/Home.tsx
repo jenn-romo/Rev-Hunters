@@ -23,7 +23,7 @@ const Home: React.FC = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4 w-full">
             <a href="tel:5612643614" className={`${buttonBaseClass} bg-accent-red text-white hover:bg-white hover:text-accent-red transform hover:-translate-y-1 gap-2 shadow-lg`}>
               <Phone className="w-5 h-5" />
-              CALL FOR DEMO
+              TRY OUR Ai
             </a>
             <Link to="/contact" className={`${buttonBaseClass} bg-primary-blue text-black hover:bg-white hover:text-black`}>
               GET MORE REVENUE
@@ -220,7 +220,7 @@ const Home: React.FC = () => {
             <div className="flex flex-col sm:flex-row justify-center gap-4 w-full">
               <a href="tel:5612643614" className={`${buttonBaseClass} bg-accent-red text-white hover:bg-white hover:text-accent-red transform hover:-translate-y-1 gap-2 shadow-xl`}>
                 <Phone className="w-5 h-5" />
-                CALL FOR DEMO
+                TRY OUR Ai
               </a>
               <Link to="/contact" className={`${buttonBaseClass} bg-primary-blue text-black hover:bg-white hover:text-black`}>
                 GET MORE REVENUE
