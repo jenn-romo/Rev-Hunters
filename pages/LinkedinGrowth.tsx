@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mic, Check, Calendar, TrendingUp, UserPlus, X } from 'lucide-react';
+import { Check, X } from 'lucide-react';
 
 const LinkedinGrowth: React.FC = () => {
   const scrollToPricing = () => {
