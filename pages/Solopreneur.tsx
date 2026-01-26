@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { PhoneMissed, DollarSign, Clock, BatteryWarning, MessageSquare, Phone, Star } from 'lucide-react';
+import { PhoneMissed, DollarSign, Clock, Zap, MessageSquare, Phone, Star } from 'lucide-react';
 
 const Solopreneur: React.FC = () => {
   return (
@@ -9,7 +9,7 @@ const Solopreneur: React.FC = () => {
       {/* HERO SECTION */}
       <section className="relative py-24 md:py-32 px-4 max-w-5xl mx-auto w-full text-center">
         <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-accent-red/5 rounded-full blur-[100px] -z-10"></div>
-        <div className="inline-block border border-white/20 bg-white/5 text-white px-4 py-1 rounded font-bold text-sm mb-8 tracking-widest uppercase">
+        <div className="inline-block border border-white/20 bg-white/5 text-white px-6 py-2 rounded font-bold text-xl md:text-2xl mb-8 tracking-widest uppercase">
           For Entrepreneurs and Small Businesses
         </div>
         <h1 className="font-heading font-black text-4xl md:text-6xl lg:text-7xl leading-tight text-white mb-8">
@@ -86,12 +86,24 @@ const Solopreneur: React.FC = () => {
         <h2 className="font-heading font-black text-3xl text-white mb-16">WHAT IT'S COSTING YOU</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="p-6 border border-white/10 hover:border-accent-red/50 transition-colors group">
-            <DollarSign className="mx-auto h-12 w-12 text-white mb-4 group-hover:text-accent-red transition-colors" />
+            <div className="flex justify-center mb-4 gap-1">
+              <DollarSign className="h-8 w-8 text-accent-red" />
+              <DollarSign className="h-8 w-8 text-accent-red" />
+              <DollarSign className="h-8 w-8 text-accent-red" />
+              <DollarSign className="h-8 w-8 text-accent-red" />
+              <DollarSign className="h-8 w-8 text-white/20" />
+            </div>
             <h3 className="font-bold text-white text-xl mb-2">LOST CASH</h3>
             <p className="text-lg text-secondary-gray">Every voicemail is a lost job. Customers don't leave messages anymore.</p>
           </div>
           <div className="p-6 border border-white/10 hover:border-accent-red/50 transition-colors group">
-            <BatteryWarning className="mx-auto h-12 w-12 text-white mb-4 group-hover:text-accent-red transition-colors" />
+            <div className="flex justify-center mb-4 gap-1">
+               <Zap className="h-8 w-8 text-accent-red fill-accent-red" />
+               <Zap className="h-8 w-8 text-white/20" />
+               <Zap className="h-8 w-8 text-white/20" />
+               <Zap className="h-8 w-8 text-white/20" />
+               <Zap className="h-8 w-8 text-white/20" />
+            </div>
             <h3 className="font-bold text-white text-xl mb-2">BURNOUT</h3>
             <p className="text-lg text-secondary-gray">You can't relax because you're afraid to miss a lead. Your phone is a leash.</p>
           </div>
@@ -107,7 +119,13 @@ const Solopreneur: React.FC = () => {
             <p className="text-lg text-secondary-gray">"Great work, but hard to get a hold of." That review kills your growth.</p>
           </div>
           <div className="p-6 border border-white/10 hover:border-accent-red/50 transition-colors group">
-            <Clock className="mx-auto h-12 w-12 text-white mb-4 group-hover:text-accent-red transition-colors" />
+            <div className="flex justify-center mb-4 gap-1">
+              <Clock className="h-8 w-8 text-accent-red" />
+              <Clock className="h-8 w-8 text-accent-red" />
+              <Clock className="h-8 w-8 text-accent-red" />
+              <Clock className="h-8 w-8 text-accent-red" />
+              <Clock className="h-8 w-8 text-white/20" />
+            </div>
             <h3 className="font-bold text-white text-xl mb-2">WASTED TIME</h3>
             <p className="text-lg text-secondary-gray">Playing phone tag for 3 days just to schedule a $200 job.</p>
           </div>
