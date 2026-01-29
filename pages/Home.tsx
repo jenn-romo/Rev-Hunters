@@ -21,7 +21,7 @@ const Home: React.FC = () => {
         {/* HERO BUTTONS */}
         <div className="flex flex-col items-center gap-4 w-full">
           <div className="flex flex-col sm:flex-row justify-center gap-4 w-full">
-            <a href="tel:5612643614" className={`${buttonBaseClass} bg-accent-red text-white hover:bg-white hover:text-accent-red transform hover:-translate-y-1 gap-2 shadow-lg`}>
+            <a href="tel:3212340612" className={`${buttonBaseClass} bg-accent-red text-white hover:bg-white hover:text-accent-red transform hover:-translate-y-1 gap-2 shadow-lg`}>
               <Phone className="w-5 h-5" />
               TRY OUR Ai
             </a>
@@ -218,7 +218,7 @@ const Home: React.FC = () => {
           
           <div className="flex flex-col items-center gap-4 w-full mt-12">
             <div className="flex flex-col sm:flex-row justify-center gap-4 w-full">
-              <a href="tel:5612643614" className={`${buttonBaseClass} bg-accent-red text-white hover:bg-white hover:text-accent-red transform hover:-translate-y-1 gap-2 shadow-xl`}>
+              <a href="tel:3212340612" className={`${buttonBaseClass} bg-accent-red text-white hover:bg-white hover:text-accent-red transform hover:-translate-y-1 gap-2 shadow-xl`}>
                 <Phone className="w-5 h-5" />
                 TRY OUR Ai
               </a>
