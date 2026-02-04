@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-const PM: React.FC = () => {
+const Dentist: React.FC = () => {
   useEffect(() => {
     // Load Typeform script dynamically
     const script = document.createElement('script');
@@ -23,10 +23,10 @@ const PM: React.FC = () => {
           Demo & Inquiry
         </span>
         <h1 className="font-heading font-black text-4xl md:text-6xl text-white mb-8">
-          PROPERTY MANAGEMENT <span className="text-primary-blue">AUTOMATION</span>
+          DENTAL PRACTICE <span className="text-primary-blue">AUTOMATION</span>
         </h1>
         <p className="text-xl text-secondary-gray max-w-3xl mx-auto mb-12">
-          Would you like to capture more of your highest-value calls, leasing inquiries, maintenance issues, and emergencies, even when your office is closed?
+          Would you like to capture more of your highest revenue new patient calls, without adding more front-desk stress or staff?
         </p>
 
         {/* Video Container - 16:9 Aspect Ratio */}
@@ -53,4 +53,4 @@ const PM: React.FC = () => {
   );
 };
 
-export default PM;
+export default Dentist;

@@ -10,6 +10,8 @@ import Enterprise from './pages/Enterprise';
 import Pricing from './pages/Pricing';
 import Contact from './pages/Contact';
 import PM from './pages/PM';
+import Dentist from './pages/Dentist';
+import HomeCare from './pages/HomeCare';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -35,6 +37,8 @@ const App: React.FC = () => {
           <Route path="pricing" element={<Pricing />} />
           <Route path="contact" element={<Contact />} />
           <Route path="pm" element={<PM />} />
+          <Route path="dentist" element={<Dentist />} />
+          <Route path="homecare" element={<HomeCare />} />
         </Route>
       </Routes>
     </HashRouter>
