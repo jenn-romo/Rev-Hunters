@@ -3,15 +3,24 @@ import React, { useEffect } from 'react';
 const PM: React.FC = () => {
   useEffect(() => {
     // Load Typeform script dynamically
-    const script = document.createElement('script');
-    script.src = "//embed.typeform.com/next/embed.js";
-    script.async = true;
-    document.body.appendChild(script);
+    const typeformScript = document.createElement('script');
+    typeformScript.src = "//embed.typeform.com/next/embed.js";
+    typeformScript.async = true;
+    document.body.appendChild(typeformScript);
+
+    // Load Vimeo script dynamically
+    const vimeoScript = document.createElement('script');
+    vimeoScript.src = "https://player.vimeo.com/api/player.js";
+    vimeoScript.async = true;
+    document.body.appendChild(vimeoScript);
 
     return () => {
       // Cleanup
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
+      if (document.body.contains(typeformScript)) {
+        document.body.removeChild(typeformScript);
+      }
+      if (document.body.contains(vimeoScript)) {
+        document.body.removeChild(vimeoScript);
       }
     };
   }, []);
@@ -29,18 +38,18 @@ const PM: React.FC = () => {
           Would you like to capture more of your highest-value calls, leasing inquiries, maintenance issues, and emergencies, even when your office is closed?
         </p>
 
-        {/* Video Container - 16:9 Aspect Ratio */}
-        <div className="relative w-full aspect-video bg-black border border-white/10 shadow-2xl mb-16 rounded-lg overflow-hidden group">
-          {/* PLACEHOLDER VIDEO - PLEASE UPDATE THE SRC BELOW WITH YOUR VIDEO ID */}
-          <iframe 
-            className="absolute inset-0 w-full h-full"
-            src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" 
-            title="Revenue Hunters Demo" 
-            frameBorder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowFullScreen
-          ></iframe>
-          <div className="absolute inset-0 pointer-events-none border border-white/5 rounded-lg"></div>
+        {/* Video Container */}
+        <div className="w-full max-w-4xl mx-auto mb-16 shadow-2xl rounded-lg overflow-hidden border border-white/10 bg-black">
+          <div style={{ padding: '75% 0 0 0', position: 'relative' }}>
+            <iframe 
+              src="https://player.vimeo.com/video/1165448997?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+              frameBorder="0" 
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+              referrerPolicy="strict-origin-when-cross-origin" 
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+              title="prop"
+            ></iframe>
+          </div>
         </div>
 
         {/* Typeform Container */}
