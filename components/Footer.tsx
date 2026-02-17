@@ -52,9 +52,11 @@ const Footer: React.FC = () => {
         
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-[10px] opacity-40">
           <p>&copy; {new Date().getFullYear()} Revenue Hunters. All rights reserved.</p>
-          <div className="mt-4 md:mt-0 flex gap-8">
-            <span className="uppercase tracking-widest font-heading">Execution is Everything</span>
-            <span className="uppercase tracking-widest font-heading">Built for Scale</span>
+          <div className="mt-4 md:mt-0 flex flex-wrap gap-8 justify-center md:justify-end">
+            <Link to="/privacy-policy" className="uppercase tracking-widest font-heading hover:text-white transition-colors">Privacy Policy</Link>
+            <Link to="/terms" className="uppercase tracking-widest font-heading hover:text-white transition-colors">Terms & Conditions</Link>
+            <span className="uppercase tracking-widest font-heading hidden sm:inline">Execution is Everything</span>
+            <span className="uppercase tracking-widest font-heading hidden sm:inline">Built for Scale</span>
           </div>
         </div>
       </div>

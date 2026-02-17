@@ -12,6 +12,8 @@ import Contact from './pages/Contact';
 import PM from './pages/PM';
 import Dentist from './pages/Dentist';
 import HomeCare from './pages/HomeCare';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import Terms from './pages/Terms';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -39,6 +41,8 @@ const App: React.FC = () => {
           <Route path="pm" element={<PM />} />
           <Route path="dentist" element={<Dentist />} />
           <Route path="homecare" element={<HomeCare />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="terms" element={<Terms />} />
         </Route>
       </Routes>
     </HashRouter>
