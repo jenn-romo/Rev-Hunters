@@ -1,7 +1,20 @@
-import React from 'react';
-import { Calendar, Phone, Mail } from 'lucide-react';
+import React, { useEffect } from 'react';
+import { Phone, Mail } from 'lucide-react';
 
 const Contact: React.FC = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
+    };
+  }, []);
+
   return (
     <div className="flex flex-col w-full py-20 px-4">
       <div className="max-w-4xl mx-auto w-full">
@@ -42,19 +55,13 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
-          {/* CALENDLY PLACEHOLDER */}
-          <div className="flex flex-col justify-center items-center bg-primary-blue/5 border border-primary-blue/20 p-8 text-center min-h-[400px]">
-            <Calendar className="h-16 w-16 text-primary-blue mb-6" />
-            <h3 className="font-heading font-bold text-2xl text-white mb-4">SKIP THE BACK & FORTH</h3>
-            <p className="text-secondary-gray mb-8 max-w-xs">
-              Ready to talk now? Select a time directly on our calendar to speak with a systems expert.
-            </p>
-            <button 
-              onClick={() => alert('Calendly would open here')}
-              className="border-2 border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-primary font-heading font-bold py-4 px-8 uppercase tracking-widest transition-all"
-            >
-              Select a Time
-            </button>
+          {/* CALENDLY WIDGET */}
+          <div className="w-full bg-primary-blue/5 border border-primary-blue/20 overflow-hidden">
+            <div 
+              className="calendly-inline-widget" 
+              data-url="https://calendly.com/jenn-revenue-hunters/20min" 
+              style={{ minWidth: '320px', height: '700px' }} 
+            />
           </div>
 
         </div>
