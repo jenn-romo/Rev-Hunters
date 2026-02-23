@@ -5,7 +5,7 @@ const PrivacyPolicy: React.FC = () => {
     <div className="flex flex-col w-full bg-primary text-secondary-gray font-body py-20 px-4">
       <div className="max-w-4xl mx-auto w-full">
         <h1 className="font-heading font-black text-4xl md:text-5xl text-white mb-8">Privacy Policy</h1>
-        <p className="text-lg text-secondary-gray mb-8">Effective Date: December 2025</p>
+        <p className="text-lg text-secondary-gray mb-8">Effective Date: February 2026</p>
 
         <div className="space-y-8 text-lg leading-relaxed">
           <p>
@@ -38,33 +38,34 @@ const PrivacyPolicy: React.FC = () => {
           </div>
 
           <div>
-            <h2 className="font-heading font-bold text-2xl text-white mb-4">3. SMS and Messaging Data</h2>
-            <p className="mb-2">If you provide your phone number, you may receive text messages related to:</p>
+            <h2 className="font-heading font-bold text-2xl text-white mb-4">3. SMS and Mobile Messaging</h2>
+            <p className="mb-2">If you provide your phone number and opt-in to receive messaging, you may receive text messages related to:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Appointment or demo confirmations</li>
               <li>Follow-ups on inquiries</li>
               <li>Customer support responses</li>
-              <li>Service updates</li>
+              <li>Service updates and marketing notifications</li>
             </ul>
-            <p className="mt-4">Message frequency varies based on your interaction with us.</p>
-            <p>Message and data rates may apply.</p>
-            <p className="mt-4">You may opt out at any time by replying:</p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>STOP to unsubscribe</li>
-              <li>HELP for assistance</li>
-            </ul>
+            <p className="mt-4">Message frequency varies based on your interaction with us. Message and data rates may apply. You may opt out at any time by replying STOP to unsubscribe or HELP for assistance.</p>
           </div>
 
           <div>
-            <h2 className="font-heading font-bold text-2xl text-white mb-4">4. Information Sharing</h2>
-            <p className="mb-4">We do not sell, rent, or share your personal information with third parties for marketing purposes.</p>
-            <p className="mb-2">We may share information only:</p>
+            <h2 className="font-heading font-bold text-2xl text-white mb-4">4. Information Sharing and Disclosure</h2>
+            <p className="mb-4">We do not sell, rent, or lease your personal information to third parties.</p>
+            
+            <div className="bg-white/5 border-l-4 border-primary-blue p-4 mb-6">
+              <p className="font-bold text-white mb-2">Specific to SMS Consent:</p>
+              <p className="italic">
+                Mobile information will not be shared with third parties/affiliates for marketing or promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.
+              </p>
+            </div>
+
+            <p className="mb-2">We may share information only in the following limited circumstances:</p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>With service providers who help us operate our business (such as messaging platforms)</li>
-              <li>When required by law</li>
-              <li>To protect our rights or prevent fraud</li>
+              <li>With service providers who assist us in delivering our services (e.g., cloud hosting or SMS delivery platforms), strictly for the purpose of providing those services to you.</li>
+              <li>When required by law or to comply with legal process.</li>
+              <li>To protect the rights, property, or safety of Revenue Hunters, our users, or the public.</li>
             </ul>
-            <p className="mt-4">All vendors are required to maintain the confidentiality of your information.</p>
           </div>
 
           <div>
@@ -76,8 +77,8 @@ const PrivacyPolicy: React.FC = () => {
             <h2 className="font-heading font-bold text-2xl text-white mb-4">6. Your Choices</h2>
             <p className="mb-2">You may:</p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Opt out of text messages at any time by replying STOP</li>
-              <li>Request access, correction, or deletion of your information by contacting us</li>
+              <li><strong>Opt-out of text messages:</strong> Reply STOP to any message you receive from us.</li>
+              <li><strong>Update/Delete Info:</strong> Request access, correction, or deletion of your information by contacting us at the email below.</li>
             </ul>
           </div>
 
@@ -92,11 +93,6 @@ const PrivacyPolicy: React.FC = () => {
             <p className="font-bold text-white">Revenue Hunters</p>
             <p>Email: sales@revenuehunters.com</p>
             <p>Website: revenuehunters.com</p>
-          </div>
-
-          <div>
-            <h2 className="font-heading font-bold text-2xl text-white mb-4">9. Updates to This Policy</h2>
-            <p>We may update this Privacy Policy from time to time. Updates will be posted on this page with a revised effective date.</p>
           </div>
         </div>
       </div>
