@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import JotForm from '../components/JotForm';
 
-const PM: React.FC = () => {
+const Realtors: React.FC = () => {
   useEffect(() => {
     // Load Vimeo script dynamically
     const vimeoScript = document.createElement('script');
@@ -24,22 +24,19 @@ const PM: React.FC = () => {
           Demo & Inquiry
         </span>
         <h1 className="font-heading font-black text-4xl md:text-6xl text-white mb-8">
-          PROPERTY MANAGEMENT <span className="text-primary-blue">AUTOMATION</span>
+          The 24/7 Listing Capture System for Realtors.
         </h1>
-        <p className="text-xl text-secondary-gray max-w-3xl mx-auto mb-12">
-          Would you like to capture more of your highest-value calls, leasing inquiries, maintenance issues, and emergencies, even when your office is closed?
-        </p>
-
+        
         {/* Video Container */}
         <div className="w-full max-w-4xl mx-auto mb-16 shadow-2xl rounded-lg overflow-hidden border border-white/10 bg-black">
-          <div style={{ padding: '75% 0 0 0', position: 'relative' }}>
+          <div style={{ padding: '60.4% 0 0 0', position: 'relative' }}>
             <iframe 
-              src="https://player.vimeo.com/video/1165448997?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+              src="https://player.vimeo.com/video/1167812802?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
               frameBorder="0" 
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
               referrerPolicy="strict-origin-when-cross-origin" 
               style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-              title="prop"
+              title="real estate"
             ></iframe>
           </div>
         </div>
@@ -54,4 +51,4 @@ const PM: React.FC = () => {
   );
 };
 
-export default PM;
+export default Realtors;

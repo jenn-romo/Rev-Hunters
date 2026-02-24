@@ -1,13 +1,8 @@
 import React, { useEffect } from 'react';
+import JotForm from '../components/JotForm';
 
 const HomeCare: React.FC = () => {
   useEffect(() => {
-    // Load Typeform script dynamically
-    const typeformScript = document.createElement('script');
-    typeformScript.src = "//embed.typeform.com/next/embed.js";
-    typeformScript.async = true;
-    document.body.appendChild(typeformScript);
-
     // Load Vimeo script dynamically
     const vimeoScript = document.createElement('script');
     vimeoScript.src = "https://player.vimeo.com/api/player.js";
@@ -16,9 +11,6 @@ const HomeCare: React.FC = () => {
 
     return () => {
       // Cleanup
-      if (document.body.contains(typeformScript)) {
-        document.body.removeChild(typeformScript);
-      }
       if (document.body.contains(vimeoScript)) {
         document.body.removeChild(vimeoScript);
       }
@@ -52,10 +44,10 @@ const HomeCare: React.FC = () => {
           </div>
         </div>
 
-        {/* Typeform Container */}
+        {/* JotForm Container */}
         <div className="w-full max-w-3xl mx-auto bg-white/5 p-1 md:p-8 rounded-lg border border-white/10">
             <h2 className="font-heading font-bold text-2xl text-white mb-8 pt-4">INTERESTED? LET'S TALK.</h2>
-            <div data-tf-live="01KGN5K3WY3XJM2F4XEK623ZZ2" className="w-full h-[600px]"></div>
+            <JotForm />
         </div>
       </section>
     </div>

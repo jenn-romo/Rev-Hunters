@@ -1,14 +1,9 @@
 import React, { useEffect } from 'react';
 import { XCircle, CheckCircle, AlertTriangle, DollarSign, Clock, Users, ShieldAlert } from 'lucide-react';
+import JotForm from '../components/JotForm';
 
 const Dentist: React.FC = () => {
   useEffect(() => {
-    // Load Typeform script dynamically
-    const typeformScript = document.createElement('script');
-    typeformScript.src = "//embed.typeform.com/next/embed.js";
-    typeformScript.async = true;
-    document.body.appendChild(typeformScript);
-
     // Load Vimeo script dynamically
     const vimeoScript = document.createElement('script');
     vimeoScript.src = "https://player.vimeo.com/api/player.js";
@@ -17,9 +12,6 @@ const Dentist: React.FC = () => {
 
     return () => {
       // Cleanup
-      if (document.body.contains(typeformScript)) {
-        document.body.removeChild(typeformScript);
-      }
       if (document.body.contains(vimeoScript)) {
         document.body.removeChild(vimeoScript);
       }
@@ -78,7 +70,7 @@ const Dentist: React.FC = () => {
 
           {/* RIGHT COL: FORM */}
           <div id="contact-form" className="w-full bg-white/5 p-1 md:p-6 rounded-lg border border-white/10 h-full min-h-[600px]">
-            <div data-tf-live="01KGN5K3WY3XJM2F4XEK623ZZ2" className="w-full h-full min-h-[550px]"></div>
+            <JotForm />
           </div>
         </div>
       </section>

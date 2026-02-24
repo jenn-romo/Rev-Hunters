@@ -1,20 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Phone, Mail } from 'lucide-react';
+import JotForm from '../components/JotForm';
 
 const Contact: React.FC = () => {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = "https://assets.calendly.com/assets/external/widget.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
-      }
-    };
-  }, []);
-
   return (
     <div className="flex flex-col w-full py-20 px-4">
       <div className="max-w-4xl mx-auto w-full">
@@ -55,13 +43,9 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
-          {/* CALENDLY WIDGET */}
+          {/* JOTFORM WIDGET */}
           <div className="w-full bg-primary-blue/5 border border-primary-blue/20 overflow-hidden">
-            <div 
-              className="calendly-inline-widget" 
-              data-url="https://calendly.com/jenn-revenue-hunters/20min" 
-              style={{ minWidth: '320px', height: '700px' }} 
-            />
+            <JotForm />
           </div>
 
         </div>
