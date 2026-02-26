@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Plumbers from './pages/Plumbers';
@@ -27,7 +27,7 @@ const ScrollToTop = () => {
 
 const App: React.FC = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -47,7 +47,7 @@ const App: React.FC = () => {
           <Route path="terms" element={<Terms />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
