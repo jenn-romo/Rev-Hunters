@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Plumbers from './pages/Plumbers';
@@ -25,10 +25,26 @@ const ScrollToTop = () => {
   return null;
 };
 
+// Redirect legacy hash URLs (e.g., /#/realtors -> /realtors)
+const HashRedirect = () => {
+  const { hash } = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (hash && hash.startsWith('#/')) {
+      const path = hash.substring(1);
+      navigate(path, { replace: true });
+    }
+  }, [hash, navigate]);
+
+  return null;
+};
+
 const App: React.FC = () => {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <HashRedirect />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
