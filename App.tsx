@@ -4,7 +4,7 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import Plumbers from './pages/Plumbers';
 import PropertyManagement from './pages/PropertyManagement';
-import LinkedinGrowth from './pages/LinkedinGrowth';
+import FounderAuthority from './pages/FounderAuthority';
 import Solopreneur from './pages/Solopreneur';
 import Enterprise from './pages/Enterprise';
 import Pricing from './pages/Pricing';
@@ -50,7 +50,7 @@ const App: React.FC = () => {
           <Route index element={<Home />} />
           <Route path="plumbers" element={<Plumbers />} />
           <Route path="propertymanagement" element={<PropertyManagement />} />
-          <Route path="linkedin" element={<LinkedinGrowth />} />
+          <Route path="founderauthority" element={<FounderAuthority />} />
           <Route path="solopreneur" element={<Solopreneur />} />
           <Route path="enterprise" element={<Enterprise />} />
           <Route path="pricing" element={<Pricing />} />
