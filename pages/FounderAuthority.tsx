@@ -194,29 +194,6 @@ const FounderAuthority: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <div className="flex-1 bg-gray-100 p-12 rounded-2xl border border-gray-200 shadow-xl">
-               <div className="space-y-6">
-                 <div className="bg-white p-6 rounded shadow-sm border border-gray-100">
-                   <div className="flex items-center gap-4 mb-4">
-                     <div className="w-10 h-10 bg-gray-200 rounded-full"></div>
-                     <div>
-                       <div className="h-3 w-24 bg-gray-200 rounded mb-1"></div>
-                       <div className="h-2 w-16 bg-gray-100 rounded"></div>
-                     </div>
-                   </div>
-                   <div className="h-2 w-full bg-gray-100 rounded mb-2"></div>
-                   <div className="h-2 w-3/4 bg-gray-100 rounded"></div>
-                 </div>
-                 <div className="bg-white p-6 rounded shadow-sm border border-gray-100 ml-8 border-l-4 border-black">
-                   <p className="font-bold text-sm mb-2">Your Profile (Managed by Us)</p>
-                   <p className="text-sm text-gray-600">"Great insight. This aligns perfectly with what we're seeing in the mid-market..."</p>
-                 </div>
-                 <div className="bg-blue-50 p-6 rounded shadow-sm border border-blue-100">
-                   <p className="font-bold text-sm text-blue-900 mb-2">Example Inbound DM</p>
-                   <p className="text-sm text-blue-800">"Hey, saw your comment on [Industry Leader]'s post. Would love to connect…"</p>
-                 </div>
-               </div>
-            </div>
           </div>
         </div>
       </section>
