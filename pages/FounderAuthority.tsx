@@ -66,7 +66,7 @@ const FounderAuthority: React.FC = () => {
 
         {/* Calendly Widget */}
         <div id="booking-section" className="w-full max-w-4xl mx-auto mb-12">
-          <div className="calendly-inline-widget" data-url="https://calendly.com/jenn-revenue-hunters/20min" style={{ minWidth: '320px', height: '700px' }}></div>
+          <div className="calendly-inline-widget" data-url="https://calendly.com/jenn-revenue-hunters/20min" style={{ minWidth: '320px', height: '1050px' }}></div>
         </div>
 
         <button 
