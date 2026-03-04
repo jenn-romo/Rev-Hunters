@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { Check, X, Mic, FileText, Calendar, TrendingUp } from 'lucide-react';
 
 const FounderAuthority: React.FC = () => {
@@ -10,16 +9,25 @@ const FounderAuthority: React.FC = () => {
     vimeoScript.async = true;
     document.body.appendChild(vimeoScript);
 
+    // Load Calendly script
+    const calendlyScript = document.createElement('script');
+    calendlyScript.src = "https://assets.calendly.com/assets/external/widget.js";
+    calendlyScript.async = true;
+    document.body.appendChild(calendlyScript);
+
     return () => {
       // Cleanup
       if (document.body.contains(vimeoScript)) {
         document.body.removeChild(vimeoScript);
       }
+      if (document.body.contains(calendlyScript)) {
+        document.body.removeChild(calendlyScript);
+      }
     };
   }, []);
 
-  const scrollToPricing = () => {
-    const element = document.getElementById('offer');
+  const scrollToBooking = () => {
+    const element = document.getElementById('booking-section');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -56,8 +64,13 @@ const FounderAuthority: React.FC = () => {
           </div>
         </div>
 
+        {/* Calendly Widget */}
+        <div id="booking-section" className="w-full max-w-4xl mx-auto mb-12">
+          <div className="calendly-inline-widget" data-url="https://calendly.com/jenn-revenue-hunters/20min" style={{ minWidth: '320px', height: '700px' }}></div>
+        </div>
+
         <button 
-          onClick={scrollToPricing}
+          onClick={scrollToBooking}
           className="bg-white text-black hover:bg-primary-blue hover:text-white font-heading font-bold text-lg md:text-xl py-6 px-12 rounded-none transition-all inline-block shadow-2xl"
         >
           DEPLOY THE ENGINE
@@ -229,9 +242,12 @@ const FounderAuthority: React.FC = () => {
               <li className="flex items-start text-lg text-secondary-gray"><Check className="h-5 w-5 text-white mr-3 mt-1"/> Profile cleanup</li>
               <li className="flex items-start text-lg text-secondary-gray"><Check className="h-5 w-5 text-white mr-3 mt-1"/> Monthly results report</li>
             </ul>
-            <Link to="/contact" className="w-full block text-center border border-white text-white font-heading font-bold py-5 hover:bg-white hover:text-black transition-all uppercase tracking-widest text-sm">
+            <button 
+              onClick={scrollToBooking}
+              className="w-full block text-center border border-white text-white font-heading font-bold py-5 hover:bg-white hover:text-black transition-all uppercase tracking-widest text-sm"
+            >
               Start Engine
-            </Link>
+            </button>
           </div>
 
           {/* ELITE */}
@@ -252,9 +268,12 @@ const FounderAuthority: React.FC = () => {
               <li className="flex items-start text-lg text-white font-medium"><Check className="h-5 w-5 text-primary-blue mr-3 mt-1"/> We interact with your target accounts</li>
               <li className="flex items-start text-lg text-white font-medium"><Check className="h-5 w-5 text-primary-blue mr-3 mt-1"/> Priority Slack support</li>
             </ul>
-            <Link to="/contact" className="w-full block text-center bg-primary-blue text-white font-heading font-bold py-5 hover:bg-white hover:text-primary-blue transition-all uppercase tracking-widest text-sm">
+            <button 
+              onClick={scrollToBooking}
+              className="w-full block text-center bg-primary-blue text-white font-heading font-bold py-5 hover:bg-white hover:text-primary-blue transition-all uppercase tracking-widest text-sm"
+            >
               Deploy Elite System
-            </Link>
+            </button>
           </div>
 
         </div>
@@ -270,7 +289,7 @@ const FounderAuthority: React.FC = () => {
             Your competitors are already posting. Let's make sure you're louder.
           </p>
           <button 
-            onClick={scrollToPricing}
+            onClick={scrollToBooking}
             className="bg-white text-black hover:bg-primary-blue hover:text-white font-heading font-bold text-xl py-6 px-16 rounded-none transition-all inline-block shadow-2xl"
           >
             BUILD AUTHORITY NOW
