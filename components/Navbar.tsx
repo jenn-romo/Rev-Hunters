@@ -10,8 +10,7 @@ const Navbar: React.FC = () => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Small Business', path: '/solopreneur' },
-    { name: 'Enterprise', path: '/enterprise' },
+    { name: 'GYMS', path: 'https://gymreps.ai', external: true },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -35,9 +34,15 @@ const Navbar: React.FC = () => {
           <div className="hidden md:block">
             <div className="ml-4 lg:ml-10 flex items-baseline space-x-6 lg:space-x-10">
               {navLinks.map((link) => (
-                <Link key={link.name} to={link.path} className={linkClass(link.path)}>
-                  {link.name.toUpperCase()}
-                </Link>
+                link.external ? (
+                  <a key={link.name} href={link.path} target="_blank" rel="noopener noreferrer" className={linkClass(link.path)}>
+                    {link.name.toUpperCase()}
+                  </a>
+                ) : (
+                  <Link key={link.name} to={link.path} className={linkClass(link.path)}>
+                    {link.name.toUpperCase()}
+                  </Link>
+                )
               ))}
             </div>
           </div>
@@ -69,16 +74,31 @@ const Navbar: React.FC = () => {
         <div className="md:hidden bg-primary border-t border-white/10">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                to={link.path}
-                onClick={() => setIsOpen(false)}
-                className={`block px-3 py-4 rounded-md text-base font-heading font-bold ${
-                  isActive(link.path) ? 'text-primary-blue' : 'text-white'
-                }`}
-              >
-                {link.name.toUpperCase()}
-              </Link>
+              link.external ? (
+                <a
+                  key={link.name}
+                  href={link.path}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsOpen(false)}
+                  className={`block px-3 py-4 rounded-md text-base font-heading font-bold ${
+                    isActive(link.path) ? 'text-primary-blue' : 'text-white'
+                  }`}
+                >
+                  {link.name.toUpperCase()}
+                </a>
+              ) : (
+                <Link
+                  key={link.name}
+                  to={link.path}
+                  onClick={() => setIsOpen(false)}
+                  className={`block px-3 py-4 rounded-md text-base font-heading font-bold ${
+                    isActive(link.path) ? 'text-primary-blue' : 'text-white'
+                  }`}
+                >
+                  {link.name.toUpperCase()}
+                </Link>
+              )
             ))}
             <Link
               to="/contact"
