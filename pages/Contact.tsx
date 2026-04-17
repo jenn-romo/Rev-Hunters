@@ -21,13 +21,13 @@ const Contact: React.FC = () => {
             </p>
             
             <div className="space-y-6">
-              <a href="tel:3212340612" className="flex items-center group">
+              <a href="tel:6894076358" className="flex items-center group">
                 <div className="h-12 w-12 bg-primary-blue/10 flex items-center justify-center mr-4 group-hover:bg-primary-blue/20 transition-colors">
                   <Phone className="h-6 w-6 text-primary-blue" />
                 </div>
                 <div>
                   <span className="block text-xs font-bold text-secondary-gray uppercase tracking-widest mb-1">Call Us</span>
-                  <span className="text-xl font-heading font-bold text-white group-hover:text-primary-blue transition-colors">(321) 234 0612</span>
+                  <span className="text-xl font-heading font-bold text-white group-hover:text-primary-blue transition-colors">(689) 407-6358</span>
                 </div>
               </a>
 
