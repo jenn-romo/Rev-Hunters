@@ -1,232 +1,309 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Check, X, ShieldCheck, Phone } from 'lucide-react';
+import { Check, MapPin, TrendingUp, Video, Target, DollarSign, Clock, Brain, Handshake } from 'lucide-react';
 
 const Home: React.FC = () => {
-  const buttonBaseClass = "w-full sm:w-80 flex items-center justify-center font-heading font-bold text-lg py-5 px-6 rounded-none transition-all";
-
   return (
-    <div className="flex flex-col w-full overflow-hidden">
+    <div className="flex flex-col w-full overflow-hidden bg-white text-primary-navy font-body">
       
-      {/* IDENTITY SECTION */}
-      <section className="relative py-24 md:py-32 px-4 max-w-7xl mx-auto w-full text-center">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-primary-blue/10 rounded-full blur-[100px] -z-10"></div>
-        <h1 className="font-heading font-black text-5xl md:text-7xl lg:text-8xl leading-tight tracking-tighter text-white mb-8">
-          WE HUNT SO <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-white">YOU CAN EAT</span>.
-        </h1>
-        <p className="text-lg md:text-2xl text-secondary-gray/80 max-w-3xl mx-auto mb-12 font-medium leading-relaxed">
-          Revenue Hunters installs automated inbound and outbound calling systems that answer, qualify, and book appointments—without hiring more staff.
-        </p>
-        
-        {/* HERO BUTTONS */}
-        <div className="flex flex-col items-center gap-4 w-full">
-          <div className="flex flex-col sm:flex-row justify-center gap-4 w-full">
-            <a href="tel:6894076358" className={`${buttonBaseClass} bg-accent-red text-white hover:bg-white hover:text-accent-red transform hover:-translate-y-1 gap-2 shadow-lg`}>
-              <Phone className="w-5 h-5" />
-              TRY OUR Ai
-            </a>
-            <Link to="/contact" className={`${buttonBaseClass} bg-primary-blue text-black hover:bg-white hover:text-black`}>
-              GET MORE REVENUE
+      {/* HERO SECTION */}
+      <section className="relative pt-32 pb-24 md:pt-40 md:pb-32 px-4 w-full text-center bg-white border-b border-primary-navy/10">
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-accent-cyan/10 rounded-full blur-[100px] -z-10"></div>
+          <h1 className="font-heading font-black text-5xl md:text-6xl lg:text-8xl leading-tight tracking-tighter text-primary-navy mb-8">
+            YOU COAT FLOORS. <br/>
+            <span className="text-accent-cyan">WE FILL YOUR CALENDAR.</span>
+          </h1>
+          <p className="text-xl md:text-2xl text-primary-navy/80 max-w-4xl mx-auto mb-12 font-medium leading-relaxed">
+            Peace of mind. A real partner. Revenue you can count on.
+          </p>
+          
+          <div className="flex flex-col items-center justify-center gap-6">
+            <Link 
+              to="/contact" 
+              className="w-full sm:w-auto bg-accent-cyan text-primary-navy hover:bg-primary-navy hover:text-white font-heading font-bold text-xl py-6 px-12 transition-all inline-block shadow-2xl uppercase tracking-wider rounded-full hover:scale-105"
+            >
+              Claim Your Territory
             </Link>
+            <p className="text-sm md:text-base text-primary-navy/70 font-bold uppercase tracking-widest flex flex-wrap items-center justify-center gap-2">
+              <span>Performance-based</span> <span className="text-accent-cyan font-black">&middot;</span> <span>Exclusive territory available</span>
+            </p>
           </div>
         </div>
       </section>
 
-      {/* PAIN SECTION */}
-      <section className="py-20 bg-black/40 border-y border-white/5">
-        <div className="max-w-5xl mx-auto px-4 text-center">
-          <h2 className="font-heading font-bold text-3xl md:text-4xl text-accent-red mb-8">
-            THE BLEEDING STOPPED?
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
-            <div>
-              <p className="text-xl md:text-2xl font-bold text-white mb-4">
-                Missed calls. <span className="text-gray-500">Slow response times.</span>
-              </p>
-              <p className="text-secondary-gray leading-relaxed text-lg">
-                Your marketing works. Your phone rings. But if you don't answer in seconds, that lead is gone. They don't leave a voicemail—they call the next competitor on Google.
-              </p>
-            </div>
-            <div className="flex flex-col justify-center border-l-2 border-accent-red/30 pl-8">
-              <p className="text-2xl md:text-3xl font-heading font-bold text-white leading-tight">
-                "LEADS LEAK. YOUR BEST PROSPECTS CALL THE NEXT COMPANY."
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAILED ATTEMPTS */}
-      <section className="py-20 max-w-7xl mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="font-heading font-bold text-3xl md:text-4xl text-white mb-4">WHY THE OLD WAY FAILS</h2>
-          <p className="text-secondary-gray">You've tried to fix this before. It's still broken.</p>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {[
-            { title: "VOICEMAIL", desc: "Where leads go to die. No one leaves them anymore." },
-            { title: "RECEPTIONISTS", desc: "They get overwhelmed, take breaks, and go home at 5 PM." },
-            { title: "SDRs", desc: "Expensive. Require management. High turnover rates." },
-            { title: "OVERSEAS VAs", desc: "Language barriers. Connection issues. Lack of context." }
-          ].map((item, idx) => (
-            <div key={idx} className="bg-white/5 p-8 border border-white/10 hover:border-primary-blue/50 transition-colors">
-              <X className="text-accent-red mb-4 h-8 w-8" />
-              <h3 className="font-heading font-bold text-xl text-white mb-2">{item.title}</h3>
-              <p className="text-lg text-secondary-gray">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* NEW MECHANISM */}
-      <section className="py-24 bg-gradient-to-b from-primary-blue/10 to-transparent">
+      {/* 3 PILLARS */}
+      <section className="py-24 bg-secondary-light border-y border-primary-navy/10">
         <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="font-heading font-black text-4xl md:text-5xl text-primary-navy mb-4">
+              THREE THINGS WE GIVE EVERY PARTNER.
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-10 rounded-xl shadow-sm border border-primary-navy/5 text-center transition-all hover:shadow-md hover:-translate-y-1">
+              <Brain className="w-12 h-12 mx-auto text-accent-cyan mb-6" />
+              <h3 className="font-heading font-bold text-2xl text-primary-navy mb-4">Peace of Mind</h3>
+              <p className="text-secondary-gray text-lg leading-relaxed">
+                Stop lying awake wondering where next month's work is coming from. We handle that.
+              </p>
+            </div>
+            <div className="bg-white p-10 rounded-xl shadow-sm border border-primary-navy/5 text-center transition-all hover:shadow-md hover:-translate-y-1">
+              <Handshake className="w-12 h-12 mx-auto text-accent-cyan mb-6" />
+              <h3 className="font-heading font-bold text-2xl text-primary-navy mb-4">Real Partnership</h3>
+              <p className="text-secondary-gray text-lg leading-relaxed">
+                We only get paid when you get paid. Our fee is on new jobs we create. Never your existing customers.
+              </p>
+            </div>
+            <div className="bg-white p-10 rounded-xl shadow-sm border border-primary-navy/5 text-center transition-all hover:shadow-md hover:-translate-y-1">
+              <TrendingUp className="w-12 h-12 mx-auto text-accent-cyan mb-6" />
+              <h3 className="font-heading font-bold text-2xl text-primary-navy mb-4">Predictable Revenue</h3>
+              <p className="text-secondary-gray text-lg leading-relaxed">
+                A steady, trackable flow of booked estimates - so you can hire, add a truck, and actually plan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* THE PROBLEM */}
+      <section className="py-24 bg-secondary-light">
+        <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-primary-blue font-heading font-bold tracking-widest text-sm mb-2 block">INTRODUCING</span>
-              <h2 className="font-heading font-black text-4xl md:text-6xl text-white mb-8">
-                THE REVENUE HUNTER SYSTEM
+              <h2 className="font-heading font-black text-4xl md:text-5xl text-primary-navy mb-8 leading-tight">
+                YOU'RE RUNNING A GREAT BUSINESS. <br/>
+                <span className="text-accent-cyan">THE MARKETING SIDE IS KILLING YOU.</span>
               </h2>
-              <p className="text-lg text-secondary-gray mb-8 leading-relaxed">
-                We install a complete proprietary infrastructure that operates with military precision. It doesn't sleep, doesn't take breaks, and follows the protocol perfectly every time.
+              <p className="text-xl text-secondary-gray leading-relaxed mb-6 font-medium">
+                You're the estimator, the salesperson, and the technician - all in one day. When the work slows down, there's no one to pick up the phone and fix it. That's the trap.
               </p>
-              <ul className="space-y-4">
-                {[
-                  "24/7 Intelligent Answering",
-                  "Instant Missed-Call Recovery",
-                  "Outbound Appointment Booking",
-                  "Automated Call Summaries"
-                ].map((feature, i) => (
-                  <li key={i} className="flex items-center text-white font-bold text-lg">
-                    <Check className="text-primary-blue mr-4 h-6 w-6" />
-                    {feature}
-                  </li>
-                ))}
+            </div>
+            <div className="bg-white p-10 border border-primary-navy/5 rounded-xl shadow-lg relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-accent-cyan/10 rounded-full blur-[40px]"></div>
+              <ul className="space-y-8 relative z-10">
+                <li className="flex items-start group">
+                  <div className="w-12 h-12 bg-secondary-light rounded flex items-center justify-center mr-6 border border-primary-navy/10 flex-shrink-0 group-hover:bg-accent-cyan/10 transition-colors">
+                    <TrendingUp className="text-primary-navy h-6 w-6" />
+                  </div>
+                  <div>
+                    <strong className="text-primary-navy text-xl block mb-1">Feast or Famine</strong>
+                    <span className="text-secondary-gray text-lg">One great month, then three quiet weeks. You can't plan. You can't hire. You can't breathe.</span>
+                  </div>
+                </li>
+                <li className="flex items-start group">
+                  <div className="w-12 h-12 bg-secondary-light rounded flex items-center justify-center mr-6 border border-primary-navy/10 flex-shrink-0 group-hover:bg-accent-cyan/10 transition-colors">
+                    <DollarSign className="text-primary-navy h-6 w-6" />
+                  </div>
+                  <div>
+                    <strong className="text-primary-navy text-xl block mb-1">Wasted Ad Spend</strong>
+                    <span className="text-secondary-gray text-lg">Money spent on ads that bring in tire-kickers, not buyers. Nothing to show at the end of the week.</span>
+                  </div>
+                </li>
+                <li className="flex items-start group">
+                  <div className="w-12 h-12 bg-secondary-light rounded flex items-center justify-center mr-6 border border-primary-navy/10 flex-shrink-0 group-hover:bg-accent-cyan/10 transition-colors">
+                    <Clock className="text-primary-navy h-6 w-6" />
+                  </div>
+                  <div>
+                    <strong className="text-primary-navy text-xl block mb-1">Your Time Burned</strong>
+                    <span className="text-secondary-gray text-lg">Chasing leads that never book. Quoting jobs that go cold. Hours you'll never get back.</span>
+                  </div>
+                </li>
               </ul>
             </div>
-            <div className="relative">
-              <div className="absolute inset-0 bg-primary-blue blur-[100px] opacity-20"></div>
-              <div className="relative bg-black border border-white/10 p-8 rounded-lg shadow-2xl">
-                <div className="flex items-center gap-4 mb-6 border-b border-white/10 pb-4">
-                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                  <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                  <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                  <span className="ml-auto text-xs font-mono text-gray-500">SYSTEM_ACTIVE</span>
-                </div>
-                <div className="space-y-4 font-mono text-sm">
-                  <div className="flex gap-4 text-green-400">
-                    <span>[10:42:01]</span>
-                    <span>Incoming Call Detected...</span>
-                  </div>
-                  <div className="flex gap-4 text-primary-blue">
-                    <span>[10:42:02]</span>
-                    <span>System Agent Assigned. Answering.</span>
-                  </div>
-                  <div className="flex gap-4 text-white">
-                    <span>[10:42:45]</span>
-                    <span>Lead Qualified: High Intent.</span>
-                  </div>
-                  <div className="flex gap-4 text-white">
-                    <span>[10:43:10]</span>
-                    <span>Appointment Booked: Thursday 2 PM.</span>
-                  </div>
-                  <div className="flex gap-4 text-gray-500">
-                    <span>[10:43:12]</span>
-                    <span>CRM Updated. Owner Notified.</span>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
+        </div>
+      </section>
+
+      {/* THE PROMISE */}
+      <section className="py-24 bg-primary-navy relative">
+        <div className="absolute inset-0 bg-accent-cyan/5"></div>
+        <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
+          <h2 className="font-heading font-black text-4xl md:text-6xl text-white mb-8">
+            WHAT IF NEXT MONTH WAS ALREADY HANDLED?
+          </h2>
+          <p className="text-xl md:text-2xl text-white/80 leading-relaxed mb-6 font-medium">
+            Imagine opening your schedule and seeing it filled - weeks out. Imagine knowing your numbers before the month starts. Imagine saying yes to a second truck because the work is already lined up.
+          </p>
+          <p className="text-2xl md:text-3xl text-accent-cyan font-black leading-relaxed mt-10">
+            That's not luck. That's what Revenue Hunters builds for you.
+          </p>
         </div>
       </section>
 
       {/* PROOF */}
-      <section className="py-20 border-y border-white/10 bg-black">
+      <section className="py-24 bg-secondary-light border-y border-primary-navy/10">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div className="p-4">
-              <div className="text-4xl md:text-5xl font-heading font-black text-white mb-2">0s</div>
-              <p className="text-sm font-bold text-secondary-gray uppercase tracking-widest">Hold Time</p>
+          <div className="text-center mb-16">
+            <h2 className="font-heading font-black text-4xl md:text-6xl text-primary-navy max-w-4xl mx-auto mb-6 leading-tight">
+              WE DON'T JUST PROMISE VIEWS. <br className="hidden md:block" />WE DELIVER BOOKED ESTIMATES.
+            </h2>
+            <p className="text-xl text-secondary-gray max-w-3xl mx-auto font-medium">
+              Real 60-day results we drove for a home-services business:
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            <div className="bg-white border border-primary-navy/10 rounded-2xl p-6 lg:p-8 text-center hover:border-accent-cyan transition-colors shadow-sm">
+              <div className="text-5xl lg:text-4xl xl:text-5xl font-heading font-black text-primary-navy mb-4 whitespace-nowrap tracking-tight">660K+</div>
+              <p className="text-sm text-secondary-gray mt-2">Views across Instagram, Facebook & TikTok in 60 days</p>
             </div>
-            <div className="p-4">
-              <div className="text-4xl md:text-5xl font-heading font-black text-white mb-2">100%</div>
-              <p className="text-sm font-bold text-secondary-gray uppercase tracking-widest">Recovery Rate</p>
+            <div className="bg-white border border-primary-navy/10 rounded-2xl p-6 lg:p-8 text-center hover:border-accent-cyan transition-colors shadow-sm">
+              <div className="text-5xl lg:text-4xl xl:text-5xl font-heading font-black text-primary-navy mb-4 whitespace-nowrap tracking-tight">290K+</div>
+              <p className="text-sm text-secondary-gray mt-2">Accounts reached in their local target areas</p>
             </div>
-            <div className="p-4">
-              <div className="text-4xl md:text-5xl font-heading font-black text-white mb-2">24/7</div>
-              <p className="text-sm font-bold text-secondary-gray uppercase tracking-widest">Availability</p>
+            <div className="bg-white border border-primary-navy/10 rounded-2xl p-6 lg:p-8 text-center hover:border-accent-cyan transition-colors shadow-sm">
+              <div className="text-5xl lg:text-4xl xl:text-5xl font-heading font-black text-primary-navy mb-4 whitespace-nowrap tracking-tight">277</div>
+              <p className="text-sm text-secondary-gray mt-2">Potential leads generated for the business</p>
             </div>
-            <div className="p-4">
-              <div className="text-4xl md:text-5xl font-heading font-black text-white mb-2">ROI</div>
-              <p className="text-sm font-bold text-secondary-gray uppercase tracking-widest">Owner Ready</p>
+            <div className="bg-white border border-primary-navy/10 rounded-2xl p-6 lg:p-8 text-center hover:border-accent-cyan transition-colors shadow-sm">
+              <div className="text-5xl lg:text-4xl xl:text-5xl font-heading font-black text-primary-navy mb-4 whitespace-nowrap tracking-tight">$100K+</div>
+              <p className="text-sm text-secondary-gray mt-2">In estimates given out in just 45 days</p>
             </div>
           </div>
+          
+          
         </div>
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="py-24 max-w-7xl mx-auto px-4">
-        <h2 className="text-center font-heading font-black text-4xl text-white mb-16">EXECUTION PLAN</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[
-            { step: "01", title: "Audit", desc: "We analyze your current call flow and missed opportunities." },
-            { step: "02", title: "Build Logic", desc: "We configure the system to handle objections and qualify leads." },
-            { step: "03", title: "Connect", desc: "We integrate with your existing phone lines and CRM." },
-            { step: "04", title: "Test", desc: "Rigorous stress testing to ensure seamless conversation." },
-            { step: "05", title: "Go Live", desc: "The system takes over. You stop missing calls instantly." },
-            { step: "06", title: "Optimize", desc: "Weekly review of call logs to refine performance." }
-          ].map((item, i) => (
-            <div key={i} className="relative p-8 border border-white/10 group hover:bg-white/5 transition-all">
-              <div className="text-6xl font-heading font-black text-white/5 absolute top-4 right-4 group-hover:text-primary-blue/10 transition-colors">
-                {item.step}
-              </div>
-              <h3 className="font-heading font-bold text-2xl text-white mb-4 relative z-10">{item.title}</h3>
-              <p className="text-lg text-secondary-gray relative z-10">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      <section className="py-24 bg-secondary-light">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-20">
+            <h2 className="font-heading font-black text-4xl md:text-5xl text-primary-navy">
+              THREE STEPS. ZERO GUESSING.
+            </h2>
+          </div>
 
-      {/* SOCIAL PROOF */}
-      <section className="py-20 bg-primary-blue">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <div>
-            <h3 className="font-heading font-bold text-3xl text-primary mb-8">
-              "We used to miss 20% of our calls on weekends. Now every single one is answered and booked."
-            </h3>
-            <p className="font-bold text-primary/80">— Plumbing Owner, Florida</p>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="p-10 border border-primary-navy/10 bg-white rounded-2xl hover:shadow-lg transition-all relative overflow-hidden group">
+              <div className="absolute top-0 right-0 p-6 text-7xl font-heading font-black text-secondary-light group-hover:text-accent-cyan/10 transition-colors">01</div>
+              <Video className="text-accent-cyan h-12 w-12 mb-8 relative z-10" />
+              <h3 className="font-heading font-bold text-2xl text-primary-navy mb-4 relative z-10">We create the content & run the ads</h3>
+              <p className="text-secondary-gray text-lg leading-relaxed relative z-10">
+                We produce videos that get real homeowners stopping the scroll. We take what's working and turn it into a paid Meta ad in your local area.
+              </p>
+            </div>
+            <div className="p-10 border border-primary-navy/10 bg-white rounded-2xl hover:shadow-lg transition-all relative overflow-hidden group">
+              <div className="absolute top-0 right-0 p-6 text-7xl font-heading font-black text-secondary-light group-hover:text-accent-cyan/10 transition-colors">02</div>
+              <Target className="text-accent-cyan h-12 w-12 mb-8 relative z-10" />
+              <h3 className="font-heading font-bold text-2xl text-primary-navy mb-4 relative z-10">We answer every lead immediately</h3>
+              <p className="text-secondary-gray text-lg leading-relaxed relative z-10">
+                Every call, every text, every form fill - our team is on it right away. We qualify the lead, send them an AI image of their own garage with their chosen coating color, and book them for an estimate.
+              </p>
+            </div>
+            <div className="p-10 border border-primary-navy/10 bg-white rounded-2xl hover:shadow-lg transition-all relative overflow-hidden group">
+              <div className="absolute top-0 right-0 p-6 text-7xl font-heading font-black text-secondary-light group-hover:text-accent-cyan/10 transition-colors">03</div>
+              <TrendingUp className="text-accent-cyan h-12 w-12 mb-8 relative z-10" />
+              <h3 className="font-heading font-bold text-2xl text-primary-navy mb-4 relative z-10">You show up to ready buyers</h3>
+              <p className="text-secondary-gray text-lg leading-relaxed relative z-10">
+                No cold leads. No tire-kickers. You arrive to homeowners who have already seen your work, paid a deposit, and are ready to move forward. You grow your crew and your fleet around real, booked demand.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-16 bg-accent-cyan/10 border border-accent-cyan/20 p-8 rounded-2xl max-w-4xl mx-auto flex items-start gap-6">
+            <div className="text-accent-cyan text-3xl">💡</div>
+            <p className="text-primary-navy text-lg font-medium leading-relaxed">
+              We run a cost plus model where you only pay for the ads and we charge a small management fee.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* GUARANTEE */}
-      <section className="py-24 max-w-4xl mx-auto px-4 text-center">
-        <ShieldCheck className="mx-auto h-20 w-20 text-white mb-8" />
-        <h2 className="font-heading font-black text-4xl text-white mb-6">THE GUARANTEE</h2>
-        <p className="text-2xl md:text-3xl font-medium text-secondary-gray leading-relaxed border-2 border-white/20 p-8 md:p-12 bg-white/5">
-          "If we don't improve booked opportunities in the first 30 days, we continue optimizing at no charge."
-        </p>
+      {/* WHAT'S INCLUDED */}
+      <section className="py-24 bg-primary-navy border-y border-white/10">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="font-heading font-black text-4xl md:text-5xl text-white mb-4">
+              EVERYTHING YOU NEED.
+            </h2>
+            <p className="text-2xl text-accent-cyan font-bold">Nothing you have to manage.</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+            {[
+              "Immediate phone, text, and email follow-up on the leads we drive",
+              "AI-generated garage visualization sent to each lead during the call",
+              "Monthly reporting and a growth review call",
+              "A capacity and hiring plan so growth never outruns your team",
+              "Options to lock in exclusive rights to your city or region"
+            ].map((item, index) => (
+              <div key={index} className="flex items-center p-6 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition-colors">
+                <Check className="h-6 w-6 text-accent-cyan mr-4 flex-shrink-0" />
+                <span className="text-lg text-white font-medium">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-32 bg-secondary-gray text-primary text-center">
+      {/* WHY A PARTNER */}
+      <section className="py-24 bg-secondary-light">
+        <div className="max-w-5xl mx-auto px-4 text-center">
+          <h2 className="font-heading font-black text-4xl md:text-5xl text-primary-navy mb-8 leading-tight">
+            WE ONLY GET PAID LIKE PARTNERS WHEN WE PERFORM LIKE PARTNERS.
+          </h2>
+          <p className="text-2xl text-secondary-gray leading-relaxed mb-8 max-w-4xl mx-auto">
+            Our commission applies only to the new booked work we generate and track through our deals dashboard - never your existing customers.
+          </p>
+          <p className="text-3xl text-primary-navy font-black pb-6">
+            Revenue Hunters does not win unless you win. That is not a slogan. It is how we get paid.
+          </p>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24 bg-white border-t border-primary-navy/10">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="font-heading font-black text-5xl md:text-6xl mb-8 leading-tight">
-            STOP LOSING MONEY.<br />START HUNTING REVENUE.
+          <h2 className="font-heading font-black text-4xl md:text-5xl text-primary-navy mb-16 text-center">
+            QUESTIONS WE GET FROM OWNERS.
           </h2>
           
-          <div className="flex flex-col items-center gap-4 w-full mt-12">
-            <div className="flex flex-col sm:flex-row justify-center gap-4 w-full">
-              <a href="tel:6894076358" className={`${buttonBaseClass} bg-accent-red text-white hover:bg-white hover:text-accent-red transform hover:-translate-y-1 gap-2 shadow-xl`}>
-                <Phone className="w-5 h-5" />
-                TRY OUR Ai
-              </a>
-              <Link to="/contact" className={`${buttonBaseClass} bg-primary-blue text-black hover:bg-white hover:text-black`}>
-                GET MORE REVENUE
-              </Link>
+          <div className="space-y-10">
+            <div>
+              <h4 className="font-heading font-bold text-2xl text-primary-navy mb-3">Do you take a cut of my current customers?</h4>
+              <p className="text-secondary-gray text-lg leading-relaxed">Never. Our cut is only on new booked estimates we generate and can prove through our tracking dashboard.</p>
+            </div>
+            <div className="h-px bg-primary-navy/10"></div>
+            <div>
+              <h4 className="font-heading font-bold text-2xl text-primary-navy mb-3">What does this cost me?</h4>
+              <p className="text-secondary-gray text-lg leading-relaxed">We run a cost plus model where you only pay for the ads and we charge a small management fee, plus a commission on the new work we book for you.</p>
+            </div>
+            <div className="h-px bg-primary-navy/10"></div>
+            <div>
+              <h4 className="font-heading font-bold text-2xl text-primary-navy mb-3">What if I cannot keep up with the work?</h4>
+              <p className="text-secondary-gray text-lg leading-relaxed">That is the whole point. We plan your capacity alongside your revenue so you are always ready for the next truck.</p>
+            </div>
+            <div className="h-px bg-primary-navy/10"></div>
+            <div>
+              <h4 className="font-heading font-bold text-2xl text-primary-navy mb-3">Am I locked in?</h4>
+              <p className="text-secondary-gray text-lg leading-relaxed">We start with a 90-day ramp and then re-evaluate a longer partnership afterwards.</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* FINAL CTA */}
+      <section className="py-32 bg-primary-navy text-white text-center relative overflow-hidden">
+        <div className="absolute top-0 right-0 left-0 mx-auto w-[600px] h-[400px] bg-accent-cyan/10 rounded-full blur-[100px] -z-10"></div>
+        <div className="max-w-4xl mx-auto px-4 z-10 relative">
+          <MapPin className="h-16 w-16 mx-auto text-accent-cyan mb-8" />
+          <h2 className="font-heading font-black text-5xl md:text-7xl mb-8 leading-tight">
+            YOUR TERRITORY IS OPEN. <br/><span className="text-accent-cyan">FOR NOW.</span>
+          </h2>
+          <p className="text-xl md:text-2xl text-white/80 mb-12 font-medium max-w-3xl mx-auto leading-relaxed">
+            Revenue Hunters partners with only one coating company per service area. If yours is still available, let's talk before someone else takes it.
+          </p>
+          <Link 
+            to="/contact"
+            className="bg-accent-cyan text-primary-navy hover:bg-white hover:text-primary-navy font-heading font-bold text-2xl py-6 px-16 transition-all inline-block shadow-2xl uppercase tracking-widest rounded-full hover:scale-105"
+          >
+            Book Your 30-Minute Growth Call
+          </Link>
+          <p className="mt-8 text-white/60 font-medium tracking-wide text-lg">
+            No pressure. No jargon. Just a straight conversation about what growth looks like for your business.
+          </p>
         </div>
       </section>
 

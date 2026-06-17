@@ -20,18 +20,18 @@ const HomeCare: React.FC = () => {
   return (
     <div className="flex flex-col w-full bg-primary text-secondary-gray font-body">
       <section className="py-20 px-4 max-w-5xl mx-auto w-full text-center">
-        <span className="text-primary-blue font-heading font-bold tracking-widest text-sm mb-4 block uppercase">
+        <span className="text-accent-cyan font-heading font-bold tracking-widest text-sm mb-4 block uppercase">
           Demo & Inquiry
         </span>
-        <h1 className="font-heading font-black text-4xl md:text-6xl text-white mb-8">
-          HOME CARE <span className="text-primary-blue">AUTOMATION</span>
+        <h1 className="font-heading font-black text-4xl md:text-6xl text-primary-navy mb-8">
+          HOME CARE <span className="text-accent-cyan">AUTOMATION</span>
         </h1>
         <p className="text-xl text-secondary-gray max-w-3xl mx-auto mb-12">
           Would you like to stop losing high-value home care clients simply because no one answered the phone?
         </p>
 
         {/* Video Container */}
-        <div className="w-full max-w-4xl mx-auto mb-16 shadow-2xl rounded-lg overflow-hidden border border-white/10 bg-black">
+        <div className="w-full max-w-4xl mx-auto mb-16 shadow-2xl rounded-lg overflow-hidden border border-primary-navy/10 bg-secondary-light">
           <div style={{ padding: '75% 0 0 0', position: 'relative' }}>
             <iframe 
               src="https://player.vimeo.com/video/1166074406?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
@@ -45,8 +45,8 @@ const HomeCare: React.FC = () => {
         </div>
 
         {/* JotForm Container */}
-        <div className="w-full max-w-3xl mx-auto bg-white/5 p-1 md:p-8 rounded-lg border border-white/10">
-            <h2 className="font-heading font-bold text-2xl text-white mb-8 pt-4">INTERESTED? LET'S TALK.</h2>
+        <div className="w-full max-w-3xl mx-auto bg-primary-navy/5 p-1 md:p-8 rounded-lg border border-primary-navy/10">
+            <h2 className="font-heading font-bold text-2xl text-primary-navy mb-8 pt-4">INTERESTED? LET'S TALK.</h2>
             <JotForm />
         </div>
       </section>

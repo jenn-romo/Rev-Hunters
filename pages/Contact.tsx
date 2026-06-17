@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
   return (
     <div className="flex flex-col w-full py-20 px-4">
       <div className="max-w-4xl mx-auto w-full">
-        <h1 className="text-center font-heading font-black text-5xl text-white mb-4">BOOK A DEMO</h1>
+        <h1 className="text-center font-heading font-black text-5xl text-primary-navy mb-4">BOOK A DEMO</h1>
         <p className="text-center text-secondary-gray mb-16 text-lg">
           See the system in action. Find out how much revenue you're missing.
         </p>
@@ -14,37 +14,37 @@ const Contact: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           
           {/* CONTACT INFO */}
-          <div className="bg-white/5 p-8 border border-white/10 flex flex-col justify-center">
-            <h2 className="font-heading font-bold text-2xl text-white mb-6">GET IN TOUCH</h2>
+          <div className="bg-primary-navy/5 p-8 border border-primary-navy/10 flex flex-col justify-center">
+            <h2 className="font-heading font-bold text-2xl text-primary-navy mb-6">GET IN TOUCH</h2>
             <p className="text-secondary-gray mb-8">
               Prefer to reach out directly? Give us a call or send an email.
             </p>
             
             <div className="space-y-6">
               <a href="tel:6894076358" className="flex items-center group">
-                <div className="h-12 w-12 bg-primary-blue/10 flex items-center justify-center mr-4 group-hover:bg-primary-blue/20 transition-colors">
-                  <Phone className="h-6 w-6 text-primary-blue" />
+                <div className="h-12 w-12 bg-accent-cyan/10 flex items-center justify-center mr-4 group-hover:bg-accent-cyan/20 transition-colors">
+                  <Phone className="h-6 w-6 text-accent-cyan" />
                 </div>
                 <div>
                   <span className="block text-xs font-bold text-secondary-gray uppercase tracking-widest mb-1">Call Us</span>
-                  <span className="text-xl font-heading font-bold text-white group-hover:text-primary-blue transition-colors">(689) 407-6358</span>
+                  <span className="text-xl font-heading font-bold text-primary-navy group-hover:text-accent-cyan transition-colors">(689) 407-6358</span>
                 </div>
               </a>
 
               <a href="mailto:sales@revenuehunters.com" className="flex items-center group">
-                <div className="h-12 w-12 bg-primary-blue/10 flex items-center justify-center mr-4 group-hover:bg-primary-blue/20 transition-colors">
-                  <Mail className="h-6 w-6 text-primary-blue" />
+                <div className="h-12 w-12 bg-accent-cyan/10 flex items-center justify-center mr-4 group-hover:bg-accent-cyan/20 transition-colors">
+                  <Mail className="h-6 w-6 text-accent-cyan" />
                 </div>
                 <div>
                   <span className="block text-xs font-bold text-secondary-gray uppercase tracking-widest mb-1">Email Us</span>
-                  <span className="text-xl font-heading font-bold text-white group-hover:text-primary-blue transition-colors">sales@revenuehunters.com</span>
+                  <span className="text-xl font-heading font-bold text-primary-navy group-hover:text-accent-cyan transition-colors">sales@revenuehunters.com</span>
                 </div>
               </a>
             </div>
           </div>
 
           {/* JOTFORM WIDGET */}
-          <div className="w-full bg-primary-blue/5 border border-primary-blue/20 overflow-hidden">
+          <div className="w-full bg-accent-cyan/5 border border-accent-cyan/20 overflow-hidden">
             <JotForm />
           </div>
 

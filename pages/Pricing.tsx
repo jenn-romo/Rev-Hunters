@@ -7,8 +7,8 @@ const Pricing: React.FC = () => {
     <div className="flex flex-col w-full py-20 px-4">
       
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <h1 className="font-heading font-black text-5xl md:text-6xl text-white mb-6">
-          SIMPLE, ROI-FOCUSED <span className="text-primary-blue">PRICING</span>
+        <h1 className="font-heading font-black text-5xl md:text-6xl text-primary-navy mb-6">
+          SIMPLE, ROI-FOCUSED <span className="text-accent-cyan">PRICING</span>
         </h1>
         <p className="text-xl text-secondary-gray">
           Invest in automation, not headcount. Scale your revenue without scaling your payroll.
@@ -18,155 +18,155 @@ const Pricing: React.FC = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
         
         {/* INBOUND RECEPTIONIST */}
-        <div className="border border-white/10 bg-black/40 p-8 flex flex-col hover:border-primary-blue/30 transition-colors">
-          <h3 className="font-heading font-bold text-2xl text-white mb-2">INBOUND RECEPTIONIST</h3>
+        <div className="border border-primary-navy/10 bg-secondary-light/40 p-8 flex flex-col hover:border-accent-cyan/30 transition-colors">
+          <h3 className="font-heading font-bold text-2xl text-primary-navy mb-2">INBOUND RECEPTIONIST</h3>
           <p className="text-secondary-gray text-base mb-6">Never miss a call again.</p>
           <div className="mb-8">
-            <span className="text-4xl font-heading font-bold text-white">$997</span>
+            <span className="text-4xl font-heading font-bold text-primary-navy">$997</span>
             <span className="text-secondary-gray text-lg"> / month</span>
           </div>
           <ul className="space-y-4 mb-8 flex-grow">
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               1 System Agent
             </li>
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               24/7 Automated Answering
             </li>
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               500 calls
             </li>
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               1,000 minutes
             </li>
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               $0.10 per additional minute
             </li>
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               Appointment Scheduling
             </li>
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               Real-time Insights
             </li>
           </ul>
-          <Link to="/contact" className="w-full block text-center border border-white text-white hover:bg-white hover:text-primary font-heading font-bold py-4 transition-all">
+          <Link to="/contact" className="w-full block text-center border border-primary-navy text-primary-navy hover:bg-primary-navy hover:text-primary font-heading font-bold py-4 transition-all">
             GET STARTED
           </Link>
         </div>
 
         {/* INBOUND SALES REP - (Formerly Featured) */}
-        <div className="border border-white/10 bg-black/40 p-8 flex flex-col hover:border-primary-blue/30 transition-colors">
-          <h3 className="font-heading font-bold text-2xl text-white mb-2">INBOUND SALES REP</h3>
+        <div className="border border-primary-navy/10 bg-secondary-light/40 p-8 flex flex-col hover:border-accent-cyan/30 transition-colors">
+          <h3 className="font-heading font-bold text-2xl text-primary-navy mb-2">INBOUND SALES REP</h3>
           <p className="text-secondary-gray text-base mb-6">Complete sales automation.</p>
           <div className="mb-8">
-            <span className="text-4xl font-heading font-bold text-white">$1,897</span>
+            <span className="text-4xl font-heading font-bold text-primary-navy">$1,897</span>
             <span className="text-secondary-gray text-lg"> / month</span>
           </div>
           <ul className="space-y-4 mb-8 flex-grow">
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               1 System Agent
             </li>
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               24/7 Automated Answering
             </li>
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               1,000 calls
             </li>
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               2,000 minutes
             </li>
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               $0.10 per additional minute
             </li>
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               Schedules Qualified Leads
             </li>
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               Sales Closing
             </li>
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               Product Knowledge
             </li>
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               Answering FAQs
             </li>
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               Real-time Insights
             </li>
           </ul>
-          <Link to="/contact" className="w-full block text-center border border-white text-white hover:bg-white hover:text-primary font-heading font-bold py-4 transition-all">
+          <Link to="/contact" className="w-full block text-center border border-primary-navy text-primary-navy hover:bg-primary-navy hover:text-primary font-heading font-bold py-4 transition-all">
             HIRE YOUR REP
           </Link>
         </div>
 
         {/* OUTBOUND SALES HUNTER */}
-        <div className="border border-white/10 bg-black/40 p-8 flex flex-col hover:border-primary-blue/30 transition-colors">
-          <h3 className="font-heading font-bold text-2xl text-white mb-2">OUTBOUND SALES HUNTER</h3>
+        <div className="border border-primary-navy/10 bg-secondary-light/40 p-8 flex flex-col hover:border-accent-cyan/30 transition-colors">
+          <h3 className="font-heading font-bold text-2xl text-primary-navy mb-2">OUTBOUND SALES HUNTER</h3>
           <p className="text-secondary-gray text-base mb-6">Aggressive lead chaser.</p>
           <div className="mb-8">
-            <span className="text-4xl font-heading font-bold text-white">$3,997</span>
+            <span className="text-4xl font-heading font-bold text-primary-navy">$3,997</span>
             <span className="text-secondary-gray text-lg"> / month</span>
           </div>
           <ul className="space-y-4 mb-8 flex-grow">
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               1 System Agent
             </li>
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               2,000 calls (100 calls per day)
             </li>
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               4,000 minutes
             </li>
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               $0.20 per additional minute
             </li>
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               Custom Onboard Protocol Training
             </li>
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               CRM Integration
             </li>
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               Calendar Integration
             </li>
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               Instant Market Insight
             </li>
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               Booked Sales Meetings
             </li>
             <li className="flex items-start text-base text-secondary-gray">
-              <Check className="h-6 w-6 text-primary-blue mr-3 flex-shrink-0" />
+              <Check className="h-6 w-6 text-accent-cyan mr-3 flex-shrink-0" />
               Real-time Insights
             </li>
           </ul>
           
-          <Link to="/contact" className="w-full block text-center border border-white text-white hover:bg-white hover:text-primary font-heading font-bold py-4 transition-all">
+          <Link to="/contact" className="w-full block text-center border border-primary-navy text-primary-navy hover:bg-primary-navy hover:text-primary font-heading font-bold py-4 transition-all">
             START HUNTING
           </Link>
         </div>

@@ -8,16 +8,16 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#161616', // primary dark
-          blue: '#60B7E3', // primary blue
+          DEFAULT: '#FFFFFF', // main background
+          navy: '#2E3748', // dark sections, footer, header
         },
         secondary: {
-          gray: '#E7E7E7', // light gray
-          blue: '#A4D6EF', // soft blue
+          gray: '#4C5564', // muted slate for text
+          light: '#F9FAFC', // off-white surface for light sections
         },
         accent: {
-          red: '#FF0000',
-          white: '#FFFFFF',
+          cyan: '#0CB5D2', // electric cyan for buttons, highlights
+          deep: '#0A93AB', // deep cyan for hovers
         }
       },
       fontFamily: {
