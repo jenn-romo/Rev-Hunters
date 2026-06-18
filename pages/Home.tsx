@@ -10,12 +10,11 @@ const Home: React.FC = () => {
       <section className="relative pt-32 pb-24 md:pt-40 md:pb-32 px-4 w-full text-center bg-white border-b border-primary-navy/10">
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-accent-cyan/10 rounded-full blur-[100px] -z-10"></div>
-          <h1 className="font-heading font-black text-5xl md:text-6xl lg:text-8xl leading-tight tracking-tighter text-primary-navy mb-8">
-            YOU COAT FLOORS. <br/>
-            <span className="text-accent-cyan">WE FILL YOUR CALENDAR.</span>
+          <h1 className="font-heading font-black text-5xl md:text-6xl lg:text-7xl leading-tight tracking-tighter text-primary-navy mb-8 max-w-5xl mx-auto">
+            A TRUSTED SALES PARTNER FOR YOUR SERVICE BUSINESS
           </h1>
-          <p className="text-xl md:text-2xl text-primary-navy/80 max-w-4xl mx-auto mb-12 font-medium leading-relaxed">
-            Peace of mind. A real partner. Revenue you can count on.
+          <p className="text-2xl md:text-3xl font-bold text-accent-cyan max-w-4xl mx-auto mb-12 leading-relaxed">
+            For owners who want to add $500K+ in jobs per year
           </p>
           
           <div className="flex flex-col items-center justify-center gap-6">
@@ -63,6 +62,40 @@ const Home: React.FC = () => {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* PROOF */}
+      <section className="py-24 bg-secondary-light border-y border-primary-navy/10">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="font-heading font-black text-4xl md:text-6xl text-primary-navy max-w-4xl mx-auto mb-6 leading-tight">
+              60 DAY RESULTS
+            </h2>
+            <p className="text-xl text-secondary-gray max-w-3xl mx-auto font-medium">
+              Real 60-day results we drove for a home-services business:
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            <div className="bg-white border border-primary-navy/10 rounded-2xl p-6 lg:p-8 text-center hover:border-accent-cyan transition-colors shadow-sm">
+              <div className="text-5xl lg:text-4xl xl:text-5xl font-heading font-black text-primary-navy mb-4 whitespace-nowrap tracking-tight">660K+</div>
+              <p className="text-sm text-secondary-gray mt-2">Views across Instagram, Facebook & TikTok in 60 days</p>
+            </div>
+            <div className="bg-white border border-primary-navy/10 rounded-2xl p-6 lg:p-8 text-center hover:border-accent-cyan transition-colors shadow-sm">
+              <div className="text-5xl lg:text-4xl xl:text-5xl font-heading font-black text-primary-navy mb-4 whitespace-nowrap tracking-tight">290K+</div>
+              <p className="text-sm text-secondary-gray mt-2">Accounts reached in their local target areas</p>
+            </div>
+            <div className="bg-white border border-primary-navy/10 rounded-2xl p-6 lg:p-8 text-center hover:border-accent-cyan transition-colors shadow-sm">
+              <div className="text-5xl lg:text-4xl xl:text-5xl font-heading font-black text-primary-navy mb-4 whitespace-nowrap tracking-tight">277</div>
+              <p className="text-sm text-secondary-gray mt-2">Potential leads generated for the business</p>
+            </div>
+            <div className="bg-white border border-primary-navy/10 rounded-2xl p-6 lg:p-8 text-center hover:border-accent-cyan transition-colors shadow-sm">
+              <div className="text-5xl lg:text-4xl xl:text-5xl font-heading font-black text-primary-navy mb-4 whitespace-nowrap tracking-tight">$100K+</div>
+              <p className="text-sm text-secondary-gray mt-2">In estimates given out in just 45 days</p>
+            </div>
+          </div>
+          
         </div>
       </section>
 
@@ -128,41 +161,6 @@ const Home: React.FC = () => {
           <p className="text-2xl md:text-3xl text-accent-cyan font-black leading-relaxed mt-10">
             That's not luck. That's what Revenue Hunters builds for you.
           </p>
-        </div>
-      </section>
-
-      {/* PROOF */}
-      <section className="py-24 bg-secondary-light border-y border-primary-navy/10">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="font-heading font-black text-4xl md:text-6xl text-primary-navy max-w-4xl mx-auto mb-6 leading-tight">
-              WE DON'T JUST PROMISE VIEWS. <br className="hidden md:block" />WE DELIVER BOOKED ESTIMATES.
-            </h2>
-            <p className="text-xl text-secondary-gray max-w-3xl mx-auto font-medium">
-              Real 60-day results we drove for a home-services business:
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            <div className="bg-white border border-primary-navy/10 rounded-2xl p-6 lg:p-8 text-center hover:border-accent-cyan transition-colors shadow-sm">
-              <div className="text-5xl lg:text-4xl xl:text-5xl font-heading font-black text-primary-navy mb-4 whitespace-nowrap tracking-tight">660K+</div>
-              <p className="text-sm text-secondary-gray mt-2">Views across Instagram, Facebook & TikTok in 60 days</p>
-            </div>
-            <div className="bg-white border border-primary-navy/10 rounded-2xl p-6 lg:p-8 text-center hover:border-accent-cyan transition-colors shadow-sm">
-              <div className="text-5xl lg:text-4xl xl:text-5xl font-heading font-black text-primary-navy mb-4 whitespace-nowrap tracking-tight">290K+</div>
-              <p className="text-sm text-secondary-gray mt-2">Accounts reached in their local target areas</p>
-            </div>
-            <div className="bg-white border border-primary-navy/10 rounded-2xl p-6 lg:p-8 text-center hover:border-accent-cyan transition-colors shadow-sm">
-              <div className="text-5xl lg:text-4xl xl:text-5xl font-heading font-black text-primary-navy mb-4 whitespace-nowrap tracking-tight">277</div>
-              <p className="text-sm text-secondary-gray mt-2">Potential leads generated for the business</p>
-            </div>
-            <div className="bg-white border border-primary-navy/10 rounded-2xl p-6 lg:p-8 text-center hover:border-accent-cyan transition-colors shadow-sm">
-              <div className="text-5xl lg:text-4xl xl:text-5xl font-heading font-black text-primary-navy mb-4 whitespace-nowrap tracking-tight">$100K+</div>
-              <p className="text-sm text-secondary-gray mt-2">In estimates given out in just 45 days</p>
-            </div>
-          </div>
-          
-          
         </div>
       </section>
 

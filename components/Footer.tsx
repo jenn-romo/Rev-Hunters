@@ -19,19 +19,6 @@ const Footer: React.FC = () => {
             <h3 className="font-heading font-bold text-sm tracking-widest mb-6 text-accent-cyan uppercase">Solutions</h3>
             <ul className="space-y-3">
               <li><Link to="/" className="text-base hover:text-white transition-colors opacity-70 hover:opacity-100">Home</Link></li>
-              <li><Link to="/contact" className="text-base hover:text-white transition-colors opacity-70 hover:opacity-100">Book Demo</Link></li>
-            </ul>
-            
-            <h3 className="font-heading font-bold text-sm tracking-widest mt-8 mb-6 text-accent-cyan uppercase">Industries</h3>
-            <ul className="space-y-3">
-              <li><Link to="/plumbers" className="text-base hover:text-white transition-colors opacity-70 hover:opacity-100">Plumbing Businesses</Link></li>
-              <li><Link to="/propertymanagement" className="text-base hover:text-white transition-colors opacity-70 hover:opacity-100">Property Management</Link></li>
-              <li><Link to="/pm" className="text-base hover:text-white transition-colors opacity-70 hover:opacity-100">PM Automation Demo</Link></li>
-              <li><Link to="/dentist" className="text-base hover:text-white transition-colors opacity-70 hover:opacity-100">Dentist Demo</Link></li>
-              <li><Link to="/homecare" className="text-base hover:text-white transition-colors opacity-70 hover:opacity-100">Home Care Demo</Link></li>
-              <li><Link to="/realtors" className="text-base hover:text-white transition-colors opacity-70 hover:opacity-100">Realtor Demo</Link></li>
-              <li><Link to="/founderauthority" className="text-base hover:text-white transition-colors opacity-70 hover:opacity-100">Founder Authority</Link></li>
-              <li><a href="https://gymreps.ai" target="_blank" rel="noopener noreferrer" className="text-base hover:text-white transition-colors opacity-70 hover:opacity-100">GYMS</a></li>
             </ul>
           </div>
 
@@ -40,7 +27,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li className="text-base opacity-80">
                 <span className="block text-xs font-bold text-white/40 uppercase mb-1">Email</span>
-                sales@revenuehunters.com
+                alexus@revenuehunters.com
               </li>
               <li className="text-base opacity-80">
                 <span className="block text-xs font-bold text-white/40 uppercase mb-1">Location</span>

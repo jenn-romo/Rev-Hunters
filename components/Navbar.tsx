@@ -8,9 +8,8 @@ const Navbar: React.FC = () => {
 
   const isActive = (path: string) => location.pathname === path;
 
-  const navLinks = [
+  const navLinks: { name: string; path: string; external?: boolean }[] = [
     { name: 'Home', path: '/' },
-    { name: 'GYMS', path: 'https://gymreps.ai', external: true },
     { name: 'Contact', path: '/contact' },
   ];
 
