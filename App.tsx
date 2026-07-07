@@ -9,6 +9,7 @@ import Solopreneur from './pages/Solopreneur';
 import Enterprise from './pages/Enterprise';
 import Pricing from './pages/Pricing';
 import Contact from './pages/Contact';
+import Meeting from './pages/Meeting';
 import PM from './pages/PM';
 import Dentist from './pages/Dentist';
 import HomeCare from './pages/HomeCare';
@@ -55,6 +56,7 @@ const App: React.FC = () => {
           <Route path="enterprise" element={<Enterprise />} />
           <Route path="pricing" element={<Pricing />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="meeting" element={<Meeting />} />
           <Route path="pm" element={<PM />} />
           <Route path="dentist" element={<Dentist />} />
           <Route path="homecare" element={<HomeCare />} />
