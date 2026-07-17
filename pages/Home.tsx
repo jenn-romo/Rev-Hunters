@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Check, MapPin, TrendingUp, Video, Target, DollarSign, Clock, Brain, Handshake } from 'lucide-react';
+import { Check, MapPin, TrendingUp, Video, Target, DollarSign, Clock, Brain, Handshake, User } from 'lucide-react';
 
 const Home: React.FC = () => {
   return (
@@ -251,8 +251,60 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* ABOUT US */}
       <section className="py-24 bg-white border-t border-primary-navy/10">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="font-heading font-black text-4xl md:text-5xl text-primary-navy mb-4">
+              MEET THE TEAM.
+            </h2>
+            <p className="text-xl text-secondary-gray max-w-3xl mx-auto font-medium">
+              The experts behind Revenue Hunters.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Luis */}
+            <div className="text-center group">
+              <div className="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-accent-cyan/20 group-hover:border-accent-cyan transition-colors">
+                <img src="https://i.ibb.co/PzG4Tsjw/1775765763878.png" alt="Luis" className="w-full h-full object-cover" />
+              </div>
+              <h3 className="font-heading font-bold text-2xl text-primary-navy mb-1">Luis</h3>
+              <p className="text-accent-cyan font-bold uppercase tracking-widest text-sm mb-3">Head of Growth</p>
+            </div>
+            
+            {/* Jenn */}
+            <div className="text-center group">
+              <div className="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-accent-cyan/20 group-hover:border-accent-cyan transition-colors">
+                <img src="https://i.ibb.co/7dVV7Sc1/1773257712517.png" alt="Jenn" className="w-full h-full object-cover" />
+              </div>
+              <h3 className="font-heading font-bold text-2xl text-primary-navy mb-1">Jenn</h3>
+              <p className="text-accent-cyan font-bold uppercase tracking-widest text-sm mb-3">Director of Marketing</p>
+            </div>
+
+            {/* Alexus */}
+            <div className="text-center group">
+              <div className="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-accent-cyan/20 group-hover:border-accent-cyan transition-colors">
+                <img src="https://i.ibb.co/tM0vH55S/1728678873277.jpg" alt="Alexus" className="w-full h-full object-cover" />
+              </div>
+              <h3 className="font-heading font-bold text-2xl text-primary-navy mb-1">Alexus</h3>
+              <p className="text-accent-cyan font-bold uppercase tracking-widest text-sm mb-3">Business Growth Manager</p>
+            </div>
+
+            {/* Bayethe */}
+            <div className="text-center group">
+              <div className="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-accent-cyan/20 group-hover:border-accent-cyan transition-colors bg-primary-navy flex items-center justify-center">
+                <User className="w-24 h-24 text-accent-cyan opacity-80" strokeWidth={1.5} />
+              </div>
+              <h3 className="font-heading font-bold text-2xl text-primary-navy mb-1">Bayethe</h3>
+              <p className="text-accent-cyan font-bold uppercase tracking-widest text-sm mb-3">Director of Technology</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24 bg-secondary-light border-t border-primary-navy/10">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="font-heading font-black text-4xl md:text-5xl text-primary-navy mb-16 text-center">
             QUESTIONS WE GET FROM OWNERS.
