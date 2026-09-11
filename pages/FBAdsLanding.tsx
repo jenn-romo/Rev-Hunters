@@ -31,12 +31,12 @@ const FBAdsLanding: React.FC = () => {
       {/* Header section */}
       <header className="bg-primary-navy text-white py-16 px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <p className="text-accent-cyan font-bold uppercase tracking-widest text-lg md:text-xl mb-4">
+          <h1 className="text-accent-cyan font-heading font-black uppercase tracking-wider text-4xl md:text-5xl lg:text-6xl mb-6 drop-shadow-sm">
             Auto Body Shop Owners ONLY
-          </p>
-          <h1 className="font-heading font-black text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
-            We get body shops 10 dent and hail customers in 3 weeks or your money back
           </h1>
+          <h2 className="text-2xl md:text-3xl font-semibold leading-relaxed max-w-3xl mx-auto mb-6 text-white/90">
+            We get body shops 10 dent and hail customers in 3 weeks or your money back
+          </h2>
         </div>
       </header>
 
