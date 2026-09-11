@@ -16,6 +16,7 @@ import HomeCare from './pages/HomeCare';
 import Realtors from './pages/Realtors';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Terms from './pages/Terms';
+import FBAdsLanding from './pages/FBAdsLanding';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -47,6 +48,7 @@ const App: React.FC = () => {
       <ScrollToTop />
       <HashRedirect />
       <Routes>
+        <Route path="/fb" element={<FBAdsLanding />} />
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="plumbers" element={<Plumbers />} />
