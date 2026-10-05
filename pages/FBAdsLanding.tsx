@@ -9,8 +9,32 @@ const FBAdsLanding: React.FC = () => {
     script.async = true;
     document.body.appendChild(script);
 
-    // Set page title
+    // Set page title and meta preview tags
     document.title = "Auto Body Shop Owners ONLY | We Guarantee Results | Revenue Hunters";
+
+    const setMeta = (property: string, content: string, isName = false) => {
+      const attr = isName ? 'name' : 'property';
+      let el = document.querySelector(`meta[${attr}="${property}"]`);
+      if (!el) {
+        el = document.createElement('meta');
+        el.setAttribute(attr, property);
+        document.head.appendChild(el);
+      }
+      el.setAttribute('content', content);
+    };
+
+    const title = "Auto Body Shop Owners ONLY | We Guarantee Results";
+    const desc = "We get body shops 10 dent and hail customers in 3 weeks or your money back. Performance-based revenue growth for collision & PDR shops.";
+    const imgUrl = window.location.origin + "/og-image.jpg";
+
+    setMeta('description', desc, true);
+    setMeta('og:title', title);
+    setMeta('og:description', desc);
+    setMeta('og:image', imgUrl);
+    setMeta('og:url', window.location.href);
+    setMeta('twitter:title', title, true);
+    setMeta('twitter:description', desc, true);
+    setMeta('twitter:image', imgUrl, true);
 
     return () => {
       if (document.body.contains(script)) {
