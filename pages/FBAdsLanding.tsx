@@ -31,21 +31,18 @@ const FBAdsLanding: React.FC = () => {
       {/* Header section (Blue Area - formatted to fit cleanly above the fold) */}
       <header className="bg-primary-navy text-white min-h-[100dvh] flex flex-col justify-center items-center py-4 px-4 text-center">
         <div className="w-full max-w-4xl mx-auto flex flex-col items-center justify-center my-auto">
-          <h1 className="text-accent-cyan font-heading font-black uppercase tracking-wide text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-2 drop-shadow-md leading-tight">
+          <h1 className="text-accent-cyan font-heading font-black uppercase tracking-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-2 drop-shadow-md leading-tight">
             Auto Body Shop Owners ONLY
           </h1>
-          <div className="text-yellow-400 font-heading font-black uppercase tracking-wider text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-2 drop-shadow-md leading-tight">
+          <div className="text-yellow-400 font-heading font-black uppercase tracking-wider text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-2.5 drop-shadow-lg leading-tight">
             We Guarantee Results
           </div>
-          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold max-w-2xl mx-auto mb-2 text-white leading-snug px-2">
-            We get body shops more customers: Dent, Hail & Collision
-          </h2>
           <p className="text-accent-cyan font-extrabold text-xl sm:text-2xl md:text-3xl mb-4 sm:mb-5 tracking-wide flex items-center justify-center gap-2">
             Watch how we do it 👇
           </p>
 
           {/* Video Embed in the Blue Area - sized to guarantee above the fold visibility */}
-          <div className="w-full max-w-lg md:max-w-xl lg:max-w-2xl mx-auto bg-white/10 p-1.5 sm:p-2 rounded-xl shadow-2xl backdrop-blur-sm border border-white/10 mb-3 sm:mb-4">
+          <div className="w-full max-w-lg md:max-w-xl lg:max-w-2xl mx-auto bg-white/10 p-1.5 sm:p-2 rounded-xl shadow-2xl backdrop-blur-sm border border-white/10 mb-4">
             <div className="rounded-lg overflow-hidden shadow-inner" style={{ position: 'relative', paddingBottom: '55.90062111801242%', height: 0 }}>
               <iframe 
                 src="https://www.loom.com/embed/f25241b249484c11934a6fa18ff16692" 
